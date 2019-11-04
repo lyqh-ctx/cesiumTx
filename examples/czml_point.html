@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer');
+    var czml = [{
+        "id" : "document",
+        "name" : "CZML Point",
+        "version" : "1.0"
+    }, {
+        "id" : "point 1",
+        "name": "point",
+        "position" : {
+            "cartographicDegrees" : [-111.0, 40.0, 0]
+        },
+        "point": {
+            "color": {
+                "rgba": [255, 255, 255, 255]
+            },
+            "outlineColor": {
+                "rgba": [255, 0, 0, 255]
+            },
+            "outlineWidth" : 4,
+            "pixelSize": 20
+        }
+    }];
+    var dataSourcePromise = Cesium.CzmlDataSource.load(czml);
+    viewer.dataSources.add(dataSourcePromise);
+    viewer.zoomTo(dataSourcePromise);
+
+
+
+
+
+</script>
+</body>
+</html>

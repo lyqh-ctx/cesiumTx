@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer"></div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer', {
+        imageryProvider : new Cesium.ArcGisMapServerImageryProvider({
+            url : 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer'
+        }),
+        baseLayerPicker : false
+    });
+
+    var layers = viewer.imageryLayers;
+    var earthAtNight = layers.addImageryProvider(new Cesium.IonImageryProvider({ assetId: 3812 }));
+    earthAtNight.alpha = 0.5;
+    earthAtNight.brightness = 2.0;
+
+    layers.addImageryProvider(new Cesium.SingleTileImageryProvider({
+        url : './img/igs/Cesium_Logo_overlay.png',
+        rectangle : Cesium.Rectangle.fromDegrees(-75.0, 28.0, -67.0, 29.75)
+    }));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer" class="fullSize"></div>
+<div id="loadingOverlay"><h1>Loading...</h1></div>
+<div id="toolbar"></div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer', {
+        terrainProvider : Cesium.createWorldTerrain(),
+        shadows : true
+    });
+
+    if (!viewer.scene.highDynamicRangeSupported) {
+        window.alert('This browser does not support high dynamic range.');
+    }
+
+    viewer.scene.camera.setView({
+        destination : new Cesium.Cartesian3(-1915097.7863741855, -4783356.851539908, 3748887.43462683),
+        orientation : new Cesium.HeadingPitchRoll(6.166004548388564, -0.043242401760068994, 0.002179961955988574),
+        endTransform : Cesium.Matrix4.IDENTITY
+    });
+
+    viewer.scene.highDynamicRange = true;
+
+    Sandcastle.addToggleButton('HDR', true, function(checked) {
+        viewer.scene.highDynamicRange = checked;
+    });
+
+    var url = '../data/models/DracoCompressed/CesiumMilkTruck.gltf';
+    var position = Cesium.Cartesian3.fromRadians(-1.9516424279517286, 0.6322397098422969, 1239.0006814631095);
+    var heading = Cesium.Math.toRadians(-15.0);
+    var pitch = 0;
+    var roll = 0;
+    var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+    var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+    var scale = 10.0;
+
+    var entity = viewer.entities.add({
+        name : url,
+        position : position,
+        orientation : orientation,
+        model : {
+            uri : url,
+            scale : scale
+        }
+    });
+
+
+</script>
+</body>
+</html>

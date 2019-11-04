@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer"></div>
+<div id="toolbar"></div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer');
+    var options = {
+        camera : viewer.scene.camera,
+        canvas : viewer.scene.canvas
+    };
+
+    var tour = null;
+    viewer.dataSources.add(
+            Cesium.KmlDataSource.load('../data/kml/eiffel-tower-flyto.kml', options))
+            .then(function(dataSource) {
+                tour = dataSource.kmlTours[0];
+                tour.tourStart.addEventListener(function() {
+                    console.log('Start tour');
+                });
+                tour.tourEnd.addEventListener(function(terminated) {
+                    console.log((terminated ? 'Terminate' : 'End') + ' tour');
+                });
+                tour.entryStart.addEventListener(function(entry) {
+                    console.log('Play ' + entry.type + ' ('+ entry.duration + ')');
+                });
+                tour.entryEnd.addEventListener(function(entry, terminated) {
+                    console.log((terminated ? 'Terminate' : 'End') + ' ' + entry.type);
+                });
+            });
+
+    Sandcastle.addToolbarButton('Play', function(){
+        tour.play(viewer);
+    });
+
+    Sandcastle.addToolbarButton('Terminate', function(){
+        tour.stop();
+    });
+
+    Sandcastle.reset = function() {
+        viewer.dataSources.removeAll();
+        viewer.clock.clockRange = Cesium.ClockRange.UNBOUNDED;
+        viewer.clock.clockStep = Cesium.ClockStep.SYSTEM_CLOCK;
+    };
+
+</script>
+</body>
+</html>

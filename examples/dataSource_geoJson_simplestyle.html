@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer',{
+        sceneMode : Cesium.SceneMode.SCENE2D,
+        timeline : false,
+        animation : false
+    });
+    //Load a GeoJSON file containing simplestyle information.
+    //To learn more about simplestyle, see https://github.com/mapbox/simplestyle-spec
+
+    //In this particular example, the name of each entity is set to its maki icon identifier.
+    //Clicking on each billboard will show it's identifier in the InfoBox.
+
+
+    var dataSource = Cesium.GeoJsonDataSource.load('../data/simplestyles.geojson');
+    viewer.dataSources.add(dataSource);
+    viewer.zoomTo(dataSource);
+
+</script>
+</body>
+</html>

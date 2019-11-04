@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer', {
+    });
+    var tdt_key="c1d6b49adb2ba817109873dbc13becb4";
+    var img_tdt=new Cesium.WebMapTileServiceImageryProvider({
+        url: "http://t0.tianditu.com/vec_w/wmts?tk="+tdt_key,
+        layer:'vec',
+        style:'default',
+        tileMatrixSetID:'w',
+        format:'tiles',
+        maximumLevel: 18
+    });
+    var img_cia= new Cesium.WebMapTileServiceImageryProvider({
+        url: 'http://t0.tianditu.gov.cn/cva_w/wmts?tk='+tdt_key,
+        layer:'cva',
+        style:'default',
+        tileMatrixSetID:'w',
+        format:'tiles',
+        maximumLevel: 18
+    });
+    var layers= viewer.scene.imageryLayers;
+    layers.addImageryProvider(img_tdt);
+    layers.addImageryProvider(img_cia);
+</script>
+</body>
+</html>

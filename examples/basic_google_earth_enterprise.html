@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+
+
+    var geeMetadata = new Cesium.GoogleEarthEnterpriseMetadata({
+        url : 'http://www.earthenterprise.org/3d',
+        proxy : new Cesium.DefaultProxy('/proxy/')
+ });
+    var gee_Imagery = new Cesium.GoogleEarthEnterpriseImageryProvider({
+        metadata : geeMetadata
+    });
+    var gee_Terrain = new Cesium.GoogleEarthEnterpriseTerrainProvider({
+        metadata : geeMetadata
+    });
+    var viewer = initCesium.initViewer('cesiumContainer', {
+        imageryProvider : gee_Imagery,
+        terrainProvider : gee_Terrain,
+        baseLayerPicker : false
+    });
+
+    // Start off looking at San Francisco.
+    viewer.camera.setView({
+        destination: Cesium.Rectangle.fromDegrees(-123.0, 36.0, -121.7, 39.0)
+    });
+
+</script>
+</body>
+</html>

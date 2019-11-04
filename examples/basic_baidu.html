@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+    <script type="text/javascript" src="js/custom/imageryProvider/BaiDuImageryProvider.js"></script>
+</head>
+<body>
+<div id="cesiumContainer"></div>
+<script>
+    var initCesium=new InitCesium();
+    var viewer =initCesium.initViewer('cesiumContainer', {
+    });
+    var img_baidu=new BaiDuImageryProvider({
+        layer:"vec"
+    });
+    var layers= viewer.scene.imageryLayers;
+    layers.addImageryProvider(img_baidu);
+</script>
+</body>
+</html>

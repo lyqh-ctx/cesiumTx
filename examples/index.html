@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>示范程序</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../ico/favicon.ico"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <script type="text/javascript" include="jquery,bootstrap,template,admin-lte,jquery.scrollto,lazyload"
+            src="../template/js/include-web.js"></script>
+    <link rel="stylesheet" href="../template/css/common.css">
+    <link rel="stylesheet" href="../template/css/header.css">
+    <link rel="stylesheet" href="../template/css/sideBar.css">
+    <link rel="stylesheet" href="../template/css/examples.css">
+    <script type="text/javascript" src="../template/js/utils.js"></script>
+</head>
+<body class="hold-transition skin-black sidebar-mini" data-spy="scroll" data-target="#scrollSpy">
+
+<!-- ./wrapper -->
+<div class="wrapper"></div>
+<script>
+    $('.wrapper').load("../template/example.html", function () {
+        utils.loadTemplate(".icl-header", "../template/header.html");
+
+       var $body = $('body');
+        $body.append("<script type='text/javascript' src='./js/config.js'><\/script>");
+        $body.append("<script type='text/javascript' src='../template/js/sidebar.js'><\/script>");
+        $body.append("<script type='text/javascript' src='../template/js/example.js'><\/script>");
+    });
+</script>
+<!-- ./wrapper end-->
+
+<!--footer-->
+<script>
+    utils.loadTemplate(".icl-footer", "../template/footer.html");
+</script>
+<!--footer end-->
+
+</body>
+</html>

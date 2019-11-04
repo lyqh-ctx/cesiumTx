@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+    <style>
+        #cesiumContainer{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    // Cesium.CesiumWidget is similar to Cesium.Viewer, but
+    // is trimmed down.  It is just a widget for the 3D globe;
+    // it does not include the animation, imagery selection,
+    // and other widgets, nor does it depend on the third-party
+    // Knockout library.
+    //使用widget初始化场景
+    var widget = new Cesium.CesiumWidget('cesiumContainer');
+</script>
+</body>
+</html>

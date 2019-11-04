@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<div id="toolbar">
+    <table><tbody>
+    <tr>
+        <td>Lighting Fade Out Distance</td>
+        <td>
+            <input type="range" min="1e6" max="1e8" step="1e6" data-bind="value: lightingFadeOutDistance, valueUpdate: 'input'">
+            <input type="text" size="10" data-bind="value: lightingFadeOutDistance">
+        </td>
+    </tr>
+    <tr>
+        <td>Lighting Fade In Distance</td>
+        <td>
+            <input type="range" min="1e6" max="1e8" step="1e6" data-bind="value: lightingFadeInDistance, valueUpdate: 'input'">
+            <input type="text" size="10" data-bind="value: lightingFadeInDistance">
+        </td>
+    </tr>
+    <tr>
+        <td>Night Fade Out Distance</td>
+        <td>
+            <input type="range" min="1e6" max="1e8" step="1e6" data-bind="value: nightFadeOutDistance, valueUpdate: 'input'">
+            <input type="text" size="10" data-bind="value: nightFadeOutDistance">
+        </td>
+    </tr>
+    <tr>
+        <td>Night Fade In Distance</td>
+        <td>
+            <input type="range" min="1e6" max="1e8" step="1e6" data-bind="value: nightFadeInDistance, valueUpdate: 'input'">
+            <input type="text" size="10" data-bind="value: nightFadeInDistance">
+        </td>
+    </tr>
+    </tbody></table>
+</div>
+
+<script>
+    var initCesium = new InitCesium();
+
+    var viewer = initCesium.initViewer('cesiumContainer',{
+        sceneModePicker:false
+    });
+    var scene = viewer.scene;
+    var globe = scene.globe;
+
+    var defaultLightFadeOut = globe.lightingFadeOutDistance;
+    var defaultLightFadeIn = globe.lightingFadeInDistance;
+    var defaultNightFadeOut = globe.nightFadeOutDistance;
+    var defaultNightFadeIn = globe.nightFadeInDistance;
+
+    // The viewModel tracks the state of our mini application.
+    var viewModel = {
+        lightingFadeOutDistance : defaultLightFadeOut,
+        lightingFadeInDistance : defaultLightFadeIn,
+        nightFadeOutDistance : defaultNightFadeOut,
+        nightFadeInDistance : defaultNightFadeIn
+    };
+    // Convert the viewModel members into knockout observables.
+    Cesium.knockout.track(viewModel);
+
+    // Bind the viewModel to the DOM elements of the UI that call for it.
+    var toolbar = document.getElementById('toolbar');
+    Cesium.knockout.applyBindings(viewModel, toolbar);
+
+    function subscribeParameter(name) {
+        Cesium.knockout.getObservable(viewModel, name).subscribe(
+                function(newValue) {
+                    globe[name] = newValue;
+                }
+        );
+    }
+
+    subscribeParameter('lightingFadeOutDistance');
+    subscribeParameter('lightingFadeInDistance');
+    subscribeParameter('nightFadeOutDistance');
+    subscribeParameter('nightFadeInDistance');
+
+    Sandcastle.addToggleButton('Ground atmosphere', globe.showGroundAtmosphere, function(checked) {
+        globe.showGroundAtmosphere = checked;
+    });
+
+    Sandcastle.addToggleButton('Lighting', globe.enableLighting, function(checked) {
+        globe.enableLighting = checked;
+    });
+
+    Sandcastle.addToolbarMenu([{
+        text : 'Cesium World Terrain - no effects',
+        onselect : function() {
+            viewer.terrainProvider = Cesium.createWorldTerrain();
+        }
+    }, {
+        text : 'Cesium World Terrain w/ Vertex Normals',
+        onselect : function() {
+            viewer.terrainProvider = Cesium.createWorldTerrain({
+                requestVertexNormals : true
+            });
+        }
+    }, {
+        text : 'Cesium World Terrain w/ Water',
+        onselect : function() {
+            viewer.terrainProvider = Cesium.createWorldTerrain({
+                requestWaterMask : true
+            });
+        }
+    }, {
+        text : 'Cesium World Terrain w/ Vertex Normals and Water',
+        onselect : function() {
+            viewer.terrainProvider = Cesium.createWorldTerrain({
+                requestVertexNormals : true,
+                requestWaterMask : true
+            });
+        }
+    }, {
+        text : 'EllipsoidTerrainProvider',
+        onselect : function() {
+            viewer.terrainProvider = new Cesium.EllipsoidTerrainProvider();
+        }
+    }]);
+
+    Sandcastle.addToolbarButton('Reset Fade Distances', function() {
+        globe.lightingFadeOutDistance = defaultLightFadeOut;
+        globe.lightingFadeInDistance = defaultLightFadeIn;
+        globe.nightFadeOutDistance = defaultNightFadeOut;
+        globe.nightFadeInDistance = defaultNightFadeIn;
+
+        viewModel.lightingFadeOutDistance = defaultLightFadeOut;
+        viewModel.lightingFadeInDistance = defaultLightFadeIn;
+        viewModel.nightFadeOutDistance = defaultNightFadeOut;
+        viewModel.nightFadeInDistance = defaultNightFadeIn;
+    });
+
+
+</script>
+</body>
+</html>

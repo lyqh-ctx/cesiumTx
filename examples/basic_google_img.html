@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer', {
+    });
+    var img_google=new Cesium.UrlTemplateImageryProvider({
+        subdomains: ["1", "2", "3"],
+        url: "http://mt{s}.google.cn/vt/lyrs=s&hl=zh-CN&x={x}&y={y}&z={z}"
+    });
+    var layers= viewer.scene.imageryLayers;
+     layers.removeAll();
+    layers.addImageryProvider(img_google);
+</script>
+</body>
+
+</html>

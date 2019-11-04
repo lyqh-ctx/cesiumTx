@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer"></div>
+<div id="toolbar"></div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer');
+    var czml1 = [{
+        'id' : 'document',
+        'name' : 'CZML Geometries: Rectangle',
+        'version' : '1.0'
+    }, {
+        'rectangle' : {
+            'coordinates' : {
+                'wsenDegrees' : [-120, 40, -110, 50]
+            },
+            'fill' : true,
+            'material' : {
+                'solidColor' : {
+                    'color': {
+                        'rgba' : [255, 0, 0, 255]
+                    }
+                }
+            }
+        }
+    }, {
+        'rectangle' : {
+            'coordinates' : {
+                'wsenDegrees' : [-110, 40, -100, 50]
+            },
+            'fill' : true,
+            'material' : {
+                'solidColor' : {
+                    'color': {
+                        'rgba' : [0, 0, 255, 255]
+                    }
+                }
+            }
+        }
+    }];
+
+    var czml2 = [{
+        'id' : 'document',
+        'name' : 'CZML Geometries: Rectangle',
+        'version' : '1.0'
+    }, {
+        'rectangle' : {
+            'coordinates' : {
+                'wsenDegrees' : [-120, 45, -110, 55]
+            },
+            'fill' : true,
+            'material' : {
+                'solidColor' : {
+                    'color': {
+                        'rgba' : [255, 255, 0, 255]
+                    }
+                }
+            }
+        }
+    }, {
+        'rectangle' : {
+            'coordinates' : {
+                'wsenDegrees' : [-110, 45, -100, 55]
+            },
+            'fill' : true,
+            'material' : {
+                'solidColor' : {
+                    'color': {
+                        'rgba' : [0, 255, 255, 255]
+                    }
+                }
+            }
+        }
+    }];
+
+    var promise1 = Cesium.CzmlDataSource.load(czml1);
+    viewer.dataSources.add(promise1);
+    var promise2 = Cesium.CzmlDataSource.load(czml2);
+    viewer.dataSources.add(promise2);
+
+    Sandcastle.addToolbarButton('Swap', function() {
+        Cesium.when.all([promise1, promise2])
+                .then(function(results) {
+                    var ds1 = results[0];
+                    var ds2 = results[1];
+                    if (viewer.dataSources.indexOf(ds1) === 0) {
+                        viewer.dataSources.raise(ds1);
+                    } else {
+                        viewer.dataSources.lower(ds1);
+                    }
+                });
+    });
+
+
+
+
+</script>
+</body>
+</html>

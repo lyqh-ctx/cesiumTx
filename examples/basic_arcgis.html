@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer', {
+    });
+    var img_arcgis=new Cesium.ArcGisMapServerImageryProvider({
+        name:"img_arcgis",
+        url:"https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+    });
+    var layers= viewer.scene.imageryLayers;
+    layers.addImageryProvider(img_arcgis);
+</script>
+</body>
+
+</html>

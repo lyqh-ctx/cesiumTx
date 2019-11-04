@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer"></div>
+<div id="toolbar"></div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer',{
+        shouldAnimate : true
+    });
+
+    Sandcastle.addDefaultToolbarButton('Satellites', function() {
+        viewer.dataSources.add(Cesium.CzmlDataSource.load('../data/simple.czml'));
+
+        viewer.camera.flyHome(0);
+    });
+
+    Sandcastle.addToolbarButton('Vehicle', function() {
+        viewer.dataSources.add(Cesium.CzmlDataSource.load('../data/Vehicle.czml'));
+
+        viewer.scene.camera.setView({
+            destination:  Cesium.Cartesian3.fromDegrees(-116.52, 35.02, 95000),
+            orientation: {
+                heading: 6
+            }
+        });
+    });
+
+    Sandcastle.reset = function() {
+        viewer.dataSources.removeAll();
+    };
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer');
+
+    function createModel(url, x, y, height) {
+        var position = Cesium.Cartesian3.fromDegrees(x, y, height);
+        viewer.entities.add({
+            name : url,
+            position : position,
+            model : {
+                uri : url
+            }
+        });
+    }
+
+    var numberOfBalloons = 13;
+    var lonIncrement = 0.00025;
+    var initialLon = -122.99875;
+    var lat = 44.0503706;
+    var height = 100.0;
+
+    var url = '../data/models/CesiumBalloon/CesiumBalloon.glb';
+
+    for (var i = 0; i < numberOfBalloons; ++i) {
+        var lon = initialLon + i * lonIncrement;
+        createModel(url, lon, lat, height);
+    }
+
+    var viewModel = {
+        show : true,
+        focalDistance : 87,
+        delta : 1,
+        sigma : 3.78,
+        stepSize : 2.46
+    };
+
+    Cesium.knockout.track(viewModel);
+    var toolbar = document.getElementById('toolbar');
+    Cesium.knockout.applyBindings(viewModel, toolbar);
+    for (var name in viewModel) {
+        if (viewModel.hasOwnProperty(name)) {
+            Cesium.knockout.getObservable(viewModel, name).subscribe(updatePostProcess);
+        }
+    }
+
+    if (!Cesium.PostProcessStageLibrary.isDepthOfFieldSupported(viewer.scene)) {
+        console.log('This browser does not support the depth of field post process.');
+    }
+
+    var depthOfField = viewer.scene.postProcessStages.add(Cesium.PostProcessStageLibrary.createDepthOfFieldStage());
+
+    function updatePostProcess() {
+        depthOfField.enabled = Boolean(viewModel.show);
+        depthOfField.uniforms.focalDistance = Number(viewModel.focalDistance);
+        depthOfField.uniforms.delta = Number(viewModel.delta);
+        depthOfField.uniforms.sigma = Number(viewModel.sigma);
+        depthOfField.uniforms.stepSize = Number(viewModel.stepSize);
+    }
+    updatePostProcess();
+
+    var target = Cesium.Cartesian3.fromDegrees(initialLon + lonIncrement, lat, height + 7.5);
+    var offset = new Cesium.Cartesian3(-37.048378684557974, -24.852967044804245, 4.352023653686047);
+    viewer.scene.camera.lookAt(target, offset);
+
+
+</script>
+</body>
+</html>

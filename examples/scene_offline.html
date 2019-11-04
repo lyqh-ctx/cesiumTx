@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+
+    // This is an example of using Cesium "Offline", meaning disconnected from the
+    // external Internet.  It must still be served from a local web server, but
+    // does not rely on any outside resources or services.  For more info, see:
+    // https://github.com/AnalyticalGraphicsInc/cesium/wiki/Offline-Guide
+
+    var viewer = initCesium.initViewer('cesiumContainer', {
+        imageryProvider : Cesium.createTileMapServiceImageryProvider({
+            url : Cesium.buildModuleUrl('Assets/Textures/NaturalEarthII')
+        }),
+        baseLayerPicker : false,
+        geocoder : false
+    });
+
+
+</script>
+</body>
+</html>

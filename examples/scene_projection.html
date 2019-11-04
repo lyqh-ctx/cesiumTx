@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+
+    // Click the projection picker to switch between orthographic and perspective projections.
+    var viewer = initCesium.initViewer('cesiumContainer', {
+        projectionPicker : true
+    });
+
+    // start with orthographic projection
+    viewer.projectionPicker.viewModel.switchToOrthographic();
+
+    var position = Cesium.Cartesian3.fromDegrees(-123.0744619, 44.0503706, 0.0);
+    var hpr = new Cesium.HeadingPitchRoll(Cesium.Math.toRadians(135), 0.0, 0.0);
+    var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+
+    var entity = viewer.entities.add({
+        position : position,
+        orientation : orientation,
+        model : {
+            uri : '../data/models/CesiumMilkTruck/CesiumMilkTruck-kmc.glb',
+            minimumPixelSize : 128,
+            maximumScale : 20000
+        }
+    });
+    viewer.trackedEntity = entity;
+
+
+</script>
+</body>
+</html>

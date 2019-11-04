@@ -1,0 +1,151 @@
+
+/*c_box2 ƽ̨����*/
+.c_box2 {
+    width: 100%;
+    background: #E8EFF2;
+    overflow: hidden;
+}
+.c_box2 .box2_center {
+    width: 1024px;
+    height: 748px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.c_box2 .box2_center ul {
+    margin-top: 100px;
+    clear: both;
+}
+.c_box2 .box2_center ul li {
+    margin-bottom: 40px;
+    cursor: pointer;
+    text-align: center;   
+    padding-left:100px;
+    width: 316px;
+    height: 280px;
+    float: left;
+    position: relative;
+}
+.c_box2 .box2_center ul li .positive {
+    background: #fff;
+    padding-top: 40px;
+    margin: 0 auto;
+    text-align: center;
+    width: 316px;
+    height: 200px;
+    border: 1px solid #DFE3E5;
+}
+.c_box2 .box2_center ul li .positive p {
+    margin: 0 auto;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    font-family: "Microsoft YaHei", '΢���ź�';
+    color: #362526;
+    font-size: 20px;
+    line-height: 40px;
+}
+.c_box2 .box2_center ul li i {
+    display: block;
+    width: 80px;
+    height: 80px;
+    content:'';
+    border:1px solid #CB0000;
+    border-radius:50%;
+    background: url(../images/WebIcon_blue.png) #CB0000;
+    position: absolute;
+    top: -30px;
+    left:260px;
+    margin:-40px 0 0 -40px;
+}
+.c_box2 .box2_center ul li .i2 {
+    display: block;
+    width: 80px;
+    height: 80px;
+    content:'';
+    border:1px solid #CB0000;
+    border-radius:50%;
+    background: url(../images/androidIcon_blue.png) no-repeat #CB0000;
+    position: absolute;
+    top: -30px;
+    left:260px;
+    margin:-40px 0 0 -40px;
+}
+.c_box2 .box2_center ul li .i3 {
+   display: block;
+    width: 80px;
+    height: 80px;
+    content:'';
+    border:1px solid #CB0000;
+    border-radius:50%;
+    background: url(../images/iosIcon_blue.png) no-repeat #CB0000;
+    position: absolute;
+    top: -30px;
+    left:260px;
+    margin:-40px 0 0 -40px;
+}
+.c_box2 .box2_center ul li .i4 {
+    display: block;
+    width: 80px;
+    height: 80px;
+    content:'';
+    border:1px solid #CB0000;
+    border-radius:50%;
+    background: url(../images/serviceIcon_blue.png) no-repeat #CB0000;
+    position: absolute;
+    top: -30px;
+    left:260px;
+    margin:-40px 0 0 -40px;
+}
+.c_box2 .box2_center ul li .positive span {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0 auto;
+    display: block;
+    width: 230px;
+    color: #887373;
+    text-align: left;
+}
+.c_box2 .box2_center ul li .info {
+    background: #CB0000;
+    margin: 0 auto;
+    width: 0px;
+    height: 200px;
+    display: none;
+    text-align: left;
+    padding-top: 20px;
+}
+.c_box2 .box2_center ul li .info>dl {
+    float: left;
+    overflow: hidden;
+    width: 130px;
+    margin-left: 5px;
+}
+.c_box2 .box2_center ul li .info>dl dd {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #fff;
+    font-family: "Microsoft YaHei", '΢���ź�';
+    font-size: 13px;
+    color: #fff;
+    line-height: 30px;
+    text-align: left;
+}
+.c_box2 .box2_center ul li .info>dl dd a {
+    display: block;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+}
+.c_box2 .box2_center ul li .info>dl dd:hover {
+    border-bottom: 1px solid #424A4F;
+}
+.c_box2 .box2_center ul li .info>dl dd:hover a {
+    color: #424A4F;
+}
+.c_box2 .box2_center ul li .info .gray dd:hover {
+    border-bottom: 1px solid #23C2F8;
+}
+.c_box2 .box2_center ul li .info .gray dd:hover a {
+    color: #23C2F8;
+}

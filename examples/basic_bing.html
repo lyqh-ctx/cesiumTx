@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer', {
+    });
+
+    var layers= viewer.scene.imageryLayers;
+    layers.addImageryProvider(new Cesium.BingMapsImageryProvider({
+        key :"Av63hPkCmH18oGGn5Qg3QhLBJvknZ97xbhyw3utDLRtFv7anHjXNOUQbyWBL5fK5",//可至官网（https://www.bingmapsportal.com/）申请key
+        url : "//dev.virtualearth.net"
+    }));
+//    key可能会失效，更换自己的key
+</script>
+</body>
+</html>

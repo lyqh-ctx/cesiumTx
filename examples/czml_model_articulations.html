@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer',{
+        shouldAnimate : true,
+        timeline:true,
+        animation: true
+    });
+    var czml = [{
+        "id" : "document",
+        "name" : "CZML Model",
+        "version" : "1.0",
+        "clock" : {
+            "interval" : "2019-06-01T16:00:00Z/2019-06-01T16:10:00Z",
+            "currentTime" : "2019-06-01T16:00:00Z",
+            "multiplier" : 60,
+            "range" : "LOOP_STOP",
+            "step" : "SYSTEM_CLOCK_MULTIPLIER"
+        }
+    }, {
+        "id" : "test model",
+        "name" : "Cesium Air",
+        "position" : {
+            "cartographicDegrees" : [-77, 37, 10000]
+        },
+        "model": {
+            "gltf" : "https://assets.agi.com/models/launchvehicle.glb",
+            "scale" : 2.0,
+            "minimumPixelSize" : 128,
+            "runAnimations" : false,
+            "articulations" : {
+                "Fairing Open" : {
+                    "epoch" : "2019-06-01T16:00:00Z",
+                    "number" : [
+                        0, 0,
+                        600, 120
+                    ]
+                },
+                "Fairing Separate" : {
+                    "epoch" : "2019-06-01T16:00:00Z",
+                    "number" : [
+                        0, 0,
+                        400, -50
+                    ]
+                },
+                "Fairing Drop" : {
+                    "epoch" : "2019-06-01T16:00:00Z",
+                    "interpolationAlgorithm" : "LAGRANGE",
+                    "interpolationDegree" : 2,
+                    "number" : [
+                        0, 0,
+                        80, 0,
+                        100, 0,
+                        120, -1,
+                        600, -120
+                    ]
+                }
+            }
+        }
+    }];
+    var dataSourcePromise = viewer.dataSources.add(Cesium.CzmlDataSource.load(czml));
+
+    dataSourcePromise.then(function(dataSource){
+        console.log(1)
+        viewer.trackedEntity = dataSource.entities.getById('test model');
+    }).otherwise(function(error){
+        console.error(error);
+    });
+
+</script>
+</body>
+</html>

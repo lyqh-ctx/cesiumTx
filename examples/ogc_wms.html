@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer');
+
+    // Add a WMS imagery layer
+    var imageryLayers = viewer.imageryLayers;
+    imageryLayers.addImageryProvider(new Cesium.WebMapServiceImageryProvider({
+        url : 'https://nationalmap.gov.au/proxy/http://geoserver.nationalmap.nicta.com.au/geotopo_250k/ows',
+        layers : 'Hydrography:bores',
+        parameters : {
+            transparent : true,
+            format : 'image/png'
+        }
+    }));
+
+    // Start off looking at Australia.
+    viewer.camera.setView({
+        destination: Cesium.Rectangle.fromDegrees(114.591, -45.837, 148.970, -5.730)
+    });
+</script>
+</body>
+</html>

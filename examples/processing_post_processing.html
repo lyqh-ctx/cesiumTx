@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer', {
+        shouldAnimate : true
+    });
+
+    var position = Cesium.Cartesian3.fromDegrees(-123.0744619, 44.0503706);
+    var url = '../data/models/CesiumMan/Cesium_Man.glb';
+    viewer.trackedEntity = viewer.entities.add({
+        name : url,
+        position : position,
+        model : {
+            uri : url
+        }
+    });
+
+    var viewModel = {
+        blackAndWhiteShow: false,
+        blackAndWhiteGradations: 5.0,
+        brightnessShow: false,
+        brightnessValue: 0.5,
+        nightVisionShow: false,
+        silhouette : true
+    };
+
+    Cesium.knockout.track(viewModel);
+    var toolbar = document.getElementById('toolbar');
+    Cesium.knockout.applyBindings(viewModel, toolbar);
+    for (var name in viewModel) {
+        if (viewModel.hasOwnProperty(name)) {
+            Cesium.knockout.getObservable(viewModel, name).subscribe(updatePostProcess);
+        }
+    }
+
+    if (!Cesium.PostProcessStageLibrary.isSilhouetteSupported(viewer.scene)) {
+        console.log('This browser does not support the silhouette post process.');
+    }
+
+    var stages = viewer.scene.postProcessStages;
+    var silhouette = stages.add(Cesium.PostProcessStageLibrary.createSilhouetteStage());
+    var blackAndWhite = stages.add(Cesium.PostProcessStageLibrary.createBlackAndWhiteStage());
+    var brightness = stages.add(Cesium.PostProcessStageLibrary.createBrightnessStage());
+    var nightVision = stages.add(Cesium.PostProcessStageLibrary.createNightVisionStage());
+
+    function updatePostProcess() {
+        silhouette.enabled = Boolean(viewModel.silhouette);
+        silhouette.uniforms.color = Cesium.Color.YELLOW;
+        blackAndWhite.enabled = Boolean(viewModel.blackAndWhiteShow);
+        blackAndWhite.uniforms.gradations = Number(viewModel.blackAndWhiteGradations);
+        brightness.enabled = Boolean(viewModel.brightnessShow);
+        brightness.uniforms.brightness = Number(viewModel.brightnessValue);
+        nightVision.enabled = Boolean(viewModel.nightVisionShow);
+    }
+    updatePostProcess();
+
+
+</script>
+</body>
+</html>

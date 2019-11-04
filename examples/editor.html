@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>示例代码</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../ico/favicon.ico"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <script type="text/javascript" include="jquery,bootstrap,template,admin-lte,ace"
+            src="../template/js/include-web.js"></script>
+    <link rel="stylesheet" href="../template/css/common.css">
+    <link rel="stylesheet" href="../template/css/header.css">
+    <link rel="stylesheet" href="../template/css/sideBar.css">
+    <link rel="stylesheet" href="../template/css/editor.css">
+    <script type="text/javascript" src="../template/js/utils.js"></script>
+</head>
+<body class="hold-transition skin-black sidebar-mini sidebar-collapse">
+
+<!-- ./wrapper -->
+<div class="wrapper"></div>
+<script>
+    $('.wrapper').load("../template/editor.html", function () {
+        utils.loadTemplate(".icl-header", "../template/header.html");
+        var $body = $('body');
+        $body.append("<script type='text/javascript' src='./js/config.js'><\/script>");
+        $body.append("<script type='text/javascript' src='../template/js/sidebar.js'><\/script>");
+        $body.append("<script type='text/javascript' src='../template/js/editor.js'><\/script>");
+    })
+</script>
+<!-- ./wrapper end-->
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+//    var viewer =new Cesium.Viewer('cesiumContainer', {
+    var viewer =initCesium.initViewer('cesiumContainer', {
+        terrainProvider:new Cesium.CesiumTerrainProvider({url:Cesium.IonResource.fromAssetId(1)})
+    });
+    cesiumGetCamersInfo(viewer);
+    viewer.camera.setView({
+        destination: new Cesium.Cartesian3(87.47563316139518,28.202865475735194,7893.987890621303),
+        orientation:{"heading":6.197278588274816,"pitch":-0.2714262119490989,"roll":6.282936088697614}
+    });
+    // For more information on Cesium World Terrain, see https://cesium.com/content/cesiumworldterrain
+</script>
+<script src="./js/cesiumGetCamerasInfo.js"></script>
+</body>
+</html>

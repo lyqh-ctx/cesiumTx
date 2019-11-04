@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer', {
+    });
+    var layers= viewer.scene.imageryLayers;
+    layers.addImageryProvider(new Cesium.UrlTemplateImageryProvider({
+        url:"http://webst02.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}"
+    }));
+</script>
+</body>
+
+</html>

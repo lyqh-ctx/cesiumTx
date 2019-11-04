@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer', {
+        terrainProvider: Cesium.createWorldTerrain()
+    });
+    // San Miguel model created by Guillermo M. Leal Llaguno. Cleaned up and hosted by Morgan McGuire: http://graphics.cs.williams.edu/data/meshes.xml
+
+    var tileset = new Cesium.Cesium3DTileset({
+        url: Cesium.IonResource.fromAssetId(5742)
+    });
+    viewer.scene.primitives.add(tileset);
+
+    var initialPosition = new Cesium.Cartesian3(-1111583.3721328347, -5855888.151574568, 2262561.444696748);
+    var initialOrientation = new Cesium.HeadingPitchRoll.fromDegrees(100.0, -15.0, 0.0);
+    viewer.scene.camera.setView({
+        destination: initialPosition,
+        orientation: initialOrientation,
+        endTransform: Cesium.Matrix4.IDENTITY
+    });
+
+</script>
+</body>
+
+</html>

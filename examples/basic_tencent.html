@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer', {
+    });
+    var layers= viewer.scene.imageryLayers;
+    layers.addImageryProvider(new Cesium.UrlTemplateImageryProvider({
+        url: 'https://p2.map.gtimg.com/sateTiles/{z}/{sx}/{sy}/{x}_{reverseY}.jpg?version=229',
+        customTags: {
+            sx: function (imageryProvider, x, y, level) {
+                return x >> 4;
+            },
+            sy: function (imageryProvider, x, y, level) {
+                return ((1 << level) - y) >> 4;
+            }
+        }
+    }));
+    var custom = new Cesium.UrlTemplateImageryProvider({
+        url : 'https://rt3.map.gtimg.com/tile?z={z}&x={x}&y={reverseY}&styleid=2&version=297'
+    });
+
+    viewer.imageryLayers.addImageryProvider(custom);
+</script>
+</body>
+</html>
