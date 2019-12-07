@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<div id="toolbar"></div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = new Cesium.Viewer('cesiumContainer',{
+        terrainProvider : new Cesium.ArcGISTiledElevationTerrainProvider({
+            url: 'https://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer'
+        })
+    });
+
+    // 2. Draw a looped polyline on terrain with per-instance color and a distance display condition.
+    // Distance display conditions for polylines on terrain are based on an approximate terrain height
+    // instead of true terrain height.
+
+    var instance = new Cesium.GeometryInstance({
+        geometry : new Cesium.GroundPolylineGeometry({
+            positions : Cesium.Cartesian3.fromDegreesArray([
+                -112.1340164450331, 36.05494287836128,
+                -112.08821010582645, 36.097804071380715,
+                -112.13296079730024, 36.168769146801104
+            ]),
+            loop : true,
+            width : 4.0
+        }),
+        attributes : {
+            color : Cesium.ColorGeometryInstanceAttribute.fromColor(Cesium.Color.fromCssColorString('green').withAlpha(0.7)),
+            distanceDisplayCondition : new Cesium.DistanceDisplayConditionGeometryInstanceAttribute(1000, 30000)
+        },
+        id : 'object returned when this instance is picked and to get/set per-instance attributes'
+    });
+
+    var primitive=viewer.scene.groundPrimitives.add(new Cesium.GroundPolylinePrimitive({
+        geometryInstances : instance,
+        appearance : Cesium.PolylineColorAppearance()
+    }));
+    viewer.camera.setView({
+        destination: Cesium.Cartesian3.fromDegrees(-112.09946341766613,35.934821174169755,8757.28969336941),
+        orientation:{"heading":6.118309363882608,"pitch":-0.42080844198621703,"roll":6.282610628632483}
+    });
+</script>
+</body>
+</html>

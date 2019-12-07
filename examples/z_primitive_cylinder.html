@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<div id="toolbar"></div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer');
+    var cylinder = new Cesium.CylinderGeometry({
+        length: 200000,
+        topRadius: 80000,
+        bottomRadius: 200000,
+    });
+    var geometry = Cesium.CylinderGeometry.createGeometry(cylinder);
+
+    // create cylinder geometry
+    var cylinder2 = new Cesium.CylinderOutlineGeometry({
+        length: 200000,
+        topRadius: 80000,
+        bottomRadius: 200000,
+    });
+    var geometry2 = Cesium.CylinderOutlineGeometry.createGeometry(cylinder2);
+
+    var instance = new Cesium.GeometryInstance({
+        geometry :geometry,
+        modelMatrix : Cesium.Matrix4.multiplyByTranslation(Cesium.Transforms.eastNorthUpToFixedFrame(
+                Cesium.Cartesian3.fromDegrees(-95.59777,40.03883)), new Cesium.Cartesian3(0.0, 0.0, 0.0), new Cesium.Matrix4()),
+    });
+    var instance2 = new Cesium.GeometryInstance({
+        geometry :geometry2,
+        modelMatrix : Cesium.Matrix4.multiplyByTranslation(Cesium.Transforms.eastNorthUpToFixedFrame(
+                Cesium.Cartesian3.fromDegrees(-105.59777,40.03883)), new Cesium.Cartesian3(0.0, 0.0, 0.0), new Cesium.Matrix4()),
+    });
+    var primitive=viewer.scene.primitives.add(new Cesium.Primitive({
+        geometryInstances :[instance,instance2],
+        appearance :new Cesium.MaterialAppearance({
+            material : Cesium.Material.fromType('Color'),
+            faceForward : true
+        })
+    }));
+</script>
+</body>
+</html>

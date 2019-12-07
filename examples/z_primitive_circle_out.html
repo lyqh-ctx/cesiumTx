@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<div id="toolbar"></div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer');
+    var circle = new Cesium.CircleOutlineGeometry({
+        center : Cesium.Cartesian3.fromDegrees(-75.59777, 40.03883),
+        radius : 100000.0
+    });
+    var geometry = Cesium.CircleOutlineGeometry.createGeometry(circle);
+    var instance = new Cesium.GeometryInstance({
+        geometry :geometry,
+    });
+
+    var primitive=viewer.scene.primitives.add(new Cesium.Primitive({
+        geometryInstances :instance,
+        appearance :new Cesium.MaterialAppearance({
+            material : Cesium.Material.fromType('Color'),
+            faceForward : true
+        })
+    }));
+    Cesium.when(primitive.readyPromise).then(function(primitive) {
+
+        viewer.camera.viewBoundingSphere(primitive._boundingSpheres[0])
+    }).otherwise(function(error){
+        window.alert(error);
+    });
+</script>
+</body>
+</html>

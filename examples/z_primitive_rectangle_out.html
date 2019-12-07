@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<div id="toolbar"></div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer');
+    // 1. create a rectangle
+    var rectangle1 = new Cesium.RectangleOutlineGeometry({
+        ellipsoid : Cesium.Ellipsoid.WGS84,
+        rectangle : Cesium.Rectangle.fromDegrees(-70.0, 39.0, -64.0, 42.0),
+        height : 10000.0
+    });
+    var geometry1 = Cesium.RectangleOutlineGeometry.createGeometry(rectangle1);
+
+    // 2. create an extruded rectangle without a top
+    var rectangle2 = new Cesium.RectangleOutlineGeometry({
+        ellipsoid : Cesium.Ellipsoid.WGS84,
+        rectangle : Cesium.Rectangle.fromDegrees(-80.0, 39.0, -74.0, 42.0),
+        height : 10000.0,
+        extrudedHeight: 300000
+    });
+    var geometry2 = Cesium.RectangleOutlineGeometry.createGeometry(rectangle2);
+    var instance1 = new Cesium.GeometryInstance({
+        geometry : geometry1,
+    });
+    var instance2 = new Cesium.GeometryInstance({
+        geometry : geometry2,
+    });
+    viewer.scene.primitives.add(new Cesium.Primitive({
+        geometryInstances : [instance1,instance2],
+        appearance :new Cesium.MaterialAppearance({
+            material : Cesium.Material.fromType('Color'),
+            faceForward : true
+        })
+    }));
+</script>
+</body>
+</html>

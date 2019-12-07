@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<div id="toolbar"></div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer');
+    var sphere = new Cesium.SphereOutlineGeometry({
+        radius :500000.0,
+        vertexFormat : Cesium.VertexFormat.POSITION_ONLY
+    });
+    var geometry = Cesium.SphereOutlineGeometry.createGeometry(sphere);
+    var instance1 = new Cesium.GeometryInstance({
+        geometry : geometry,
+        modelMatrix : Cesium.Matrix4.multiplyByTranslation(Cesium.Transforms.eastNorthUpToFixedFrame(
+                Cesium.Cartesian3.fromDegrees(-95.59777,40.03883)), new Cesium.Cartesian3(0.0, 0.0, 100.0), new Cesium.Matrix4()),
+    });
+    viewer.scene.primitives.add(new Cesium.Primitive({
+        geometryInstances : instance1,
+        appearance :new Cesium.MaterialAppearance({
+            material : Cesium.Material.fromType('Color'),
+            faceForward : true
+        })
+    }));
+</script>
+</body>
+</html>

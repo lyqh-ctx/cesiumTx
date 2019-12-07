@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<div id="toolbar"></div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer');
+    var instance = new Cesium.GeometryInstance({
+        geometry : new Cesium.EllipseOutlineGeometry({
+            center : Cesium.Cartesian3.fromDegrees(-100.0, 20.0),
+            semiMinorAxis : 500000.0,
+            semiMajorAxis : 1000000.0,
+            rotation : Cesium.Math.PI_OVER_FOUR,
+            vertexFormat : Cesium.VertexFormat.POSITION_AND_ST
+        }),
+        id : 'object returned when this instance is picked and to get/set per-instance attributes'
+    });
+    var primitive=viewer.scene.primitives.add(new Cesium.Primitive({
+        geometryInstances : instance,
+        appearance : new Cesium.MaterialAppearance({
+            material : Cesium.Material.fromType('Color'),
+            faceForward : true
+        })
+    }));
+
+</script>
+</body>
+</html>

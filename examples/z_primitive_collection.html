@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<div id="toolbar"></div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer');
+    // Create a pointPrimitive collection with two points
+    var points = viewer.scene.primitives.add(new Cesium.PointPrimitiveCollection());
+    points.add({
+        position : Cesium.Cartesian3.fromDegrees(-75.59777, 40.03883),
+        color : Cesium.Color.YELLOW
+    });
+    points.add({
+        position : Cesium.Cartesian3.fromDegrees(-65.59777, 40.03883),
+        color : Cesium.Color.CYAN
+    });
+    // Create a billboard collection with two billboards
+    var billboards = viewer.scene.primitives.add(new Cesium.BillboardCollection());
+    billboards.add({
+        position : new Cesium.Cartesian3.fromDegrees(-55.59777, 40.03883),
+        image : './img/igs/fly.png'
+    });
+    billboards.add({
+        position : new Cesium.Cartesian3.fromDegrees(-45.59777, 40.03883),
+        image : './img/igs/fly.png'
+    });
+    // Create a label collection with two labels
+    var labels = viewer.scene.primitives.add(new Cesium.LabelCollection());
+    labels.add({
+        position :  new Cesium.Cartesian3.fromDegrees(-75.59777, 30.03883),
+        text : 'A label'
+    });
+    labels.add({
+        position :  new Cesium.Cartesian3.fromDegrees(-65.59777, 30.03883),
+        text : 'Another label'
+    });
+
+    // Create a polyline collection with two polylines
+    var polylines = new Cesium.PolylineCollection()
+    polylines.add({
+        positions : Cesium.Cartesian3.fromDegreesArray([
+            -75.10, 39.57,
+            -77.02, 38.53,
+            -80.50, 35.14,
+            -80.12, 25.46]),
+        width : 2,
+        material:new Cesium.Material({
+            fabric : {
+                type : 'Color',
+                uniforms : {
+                    color : new Cesium.Color(1.0, 1.0, 0.0, 1.0)
+                }
+            }
+        })
+    });
+
+    polylines.add({
+        positions : Cesium.Cartesian3.fromDegreesArray([
+            -73.10, 37.57,
+            -75.02, 36.53,
+            -78.50, 33.14,
+            -78.12, 23.46]),
+        width : 4,
+        material:new Cesium.Material({
+            fabric : {
+                type : 'Color',
+                uniforms : {
+                    color : new Cesium.Color(1.0, 0.0, 1.0, 1.0)
+                }
+            }
+        })
+    });
+    var collection = new Cesium.PrimitiveCollection();
+    collection.add(polylines);
+    viewer.scene.primitives.add(collection);;
+</script>
+</body>
+</html>

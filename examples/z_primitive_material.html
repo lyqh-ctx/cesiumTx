@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="//cesiumjs.org/releases/1.0/Build/Cesium/Widgets/widgets.css" />
+    <link rel="stylesheet" href="./css/example.css">
+    <script src="//cesiumjs.org/releases/1.0/Build/Cesium/Cesium.js"></script>
+    <script type="text/javascript" src="./js/custom/material/MaterialPack.js"></script>
+    <style>
+        .cesium-widget{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<div id="toolbar"></div>
+<script>
+    var widget = new Cesium.CesiumWidget('cesiumContainer',{
+        imageryProvider:new Cesium.ArcGisMapServerImageryProvider({
+            name:"img_arcgis",
+            url:"https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+        })
+    });
+    var scene = widget.scene;
+    var primitives = scene.primitives;
+
+    primitives.add(new Cesium.RectanglePrimitive({
+        rectangle : Cesium.Rectangle.fromDegrees(-120.0, 30.0, -100.0, 40.0),
+        material : Cesium.Material.fromType('Asphalt')
+    }));
+
+    primitives.add(new Cesium.RectanglePrimitive({
+        rectangle : Cesium.Rectangle.fromDegrees(-100.0, 30.0, -80.0, 40.0),
+        material : Cesium.Material.fromType('Blob')
+    }));
+
+    primitives.add(new Cesium.RectanglePrimitive({
+        rectangle : Cesium.Rectangle.fromDegrees(-80.0, 30.0, -60.0, 40.0),
+        material : Cesium.Material.fromType('Brick')
+    }));
+
+    primitives.add(new Cesium.RectanglePrimitive({
+        rectangle : Cesium.Rectangle.fromDegrees(-120.0, 20.0, -100.0, 30.0),
+        material : Cesium.Material.fromType('Cement')
+    }));
+
+    primitives.add(new Cesium.RectanglePrimitive({
+        rectangle : Cesium.Rectangle.fromDegrees(-100.0, 20.0, -80.0, 30.0),
+        material : Cesium.Material.fromType('Facet')
+    }));
+
+    primitives.add(new Cesium.RectanglePrimitive({
+        rectangle : Cesium.Rectangle.fromDegrees(-80.0, 20.0, -60.0, 30.0),
+        material : Cesium.Material.fromType('Grass')
+    }));
+
+    primitives.add(new Cesium.RectanglePrimitive({
+        rectangle : Cesium.Rectangle.fromDegrees(-120.0, 10.0, -100.0, 20.0),
+        material : Cesium.Material.fromType('TieDye')
+    }));
+
+    primitives.add(new Cesium.RectanglePrimitive({
+        rectangle : Cesium.Rectangle.fromDegrees(-100.0, 10.0, -80.0, 20.0),
+        material : Cesium.Material.fromType('Wood')
+    }));
+
+    var rectangle = primitives.add(new Cesium.RectanglePrimitive({
+        rectangle : Cesium.Rectangle.fromDegrees(-80.0, 10.0, -60.0, 20.0),
+        material : Cesium.Material.fromType('Erosion')
+    }));
+    scene.tweens.addProperty({
+        object : rectangle.material.uniforms,
+        property : 'time',
+        startValue : 0.0,
+        stopValue : 1.0,
+        duration : 10.0
+    });
+
+    var imagePath = 'js/custom/material/checkerboard.png';
+    var radius = 500000.0;
+    var radii = new Cesium.Cartesian3(radius, radius, radius);
+    var height = radius * 0.5;
+
+    primitives.add(new Cesium.EllipsoidPrimitive({
+        center : Cesium.Cartesian3.fromDegrees(-110.0, 50.0, height),
+        radii : radii,
+        material : new Cesium.Material({
+            fabric : {
+                materials : {
+                    fresnel : {
+                        type : 'Fresnel',
+                        materials : {
+                            reflection : {
+                                uniforms : {
+                                    cubeMap : {
+                                        positiveX : imagePath,
+                                        negativeX : imagePath,
+                                        positiveY : imagePath,
+                                        negativeY : imagePath,
+                                        positiveZ : imagePath,
+                                        negativeZ : imagePath
+                                    }
+                                }
+                            },
+                            refraction : {
+                                uniforms : {
+                                    cubeMap : {
+                                        positiveX : imagePath,
+                                        negativeX : imagePath,
+                                        positiveY : imagePath,
+                                        negativeY : imagePath,
+                                        positiveZ : imagePath,
+                                        negativeZ : imagePath
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                components: {
+                    diffuse: 'fresnel.diffuse + 0.7'
+                }
+            }
+        })
+    }));
+
+    primitives.add(new Cesium.EllipsoidPrimitive({
+        center : Cesium.Cartesian3.fromDegrees(-90.0, 50.0, height),
+        radii : radii,
+        material : new Cesium.Material({
+            fabric : {
+                materials : {
+                    reflection: {
+                        type : 'Reflection',
+                        uniforms: {
+                            cubeMap: {
+                                positiveX: imagePath,
+                                negativeX: imagePath,
+                                positiveY: imagePath,
+                                negativeY: imagePath,
+                                positiveZ: imagePath,
+                                negativeZ: imagePath
+                            }
+                        }
+                    }
+                },
+                components: {
+                    diffuse: 'reflection.diffuse + 0.7'
+                }
+            }
+        })
+    }));
+
+    primitives.add(new Cesium.EllipsoidPrimitive({
+        center : Cesium.Cartesian3.fromDegrees(-70.0, 50.0, height),
+        radii : radii,
+        material : new Cesium.Material({
+            fabric : {
+                materials : {
+                    refraction: {
+                        type : 'Refraction',
+                        uniforms: {
+                            cubeMap: {
+                                positiveX: imagePath,
+                                negativeX: imagePath,
+                                positiveY: imagePath,
+                                negativeY: imagePath,
+                                positiveZ: imagePath,
+                                negativeZ: imagePath
+                            },
+                            indexOfRefractionRatio: 0.9
+                        }
+                    }
+                },
+                components: {
+                    diffuse: 'refraction.diffuse + 0.7'
+                }
+            }
+        })
+    }));
+</script>
+</body>
+</html>

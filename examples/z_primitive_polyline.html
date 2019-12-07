@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<div id="toolbar"></div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer');
+    // A polyline with two connected line segments
+    var polyline = new Cesium.PolylineGeometry({
+        positions : Cesium.Cartesian3.fromDegreesArray([
+            -72.0, 40.0,
+            -70.0, 35.0,
+            -75.0, 30.0,
+            -70.0, 30.0,
+            -68.0, 40.0
+        ]),
+        width : 10.0,
+//        colors:[Cesium.Color.ALICEBLUE,Cesium.Color.AQUA ,Cesium.Color.RED]
+    });
+    var geometry = Cesium.PolylineGeometry.createGeometry(polyline);
+    var instance = new Cesium.GeometryInstance({
+        geometry : geometry,
+    });
+    var primitive=viewer.scene.primitives.add(new Cesium.Primitive({
+        geometryInstances : instance,
+        appearance : new Cesium.PolylineMaterialAppearance({
+            material : Cesium.Material.fromType('Color')
+        })
+    }));
+
+</script>
+</body>
+</html>

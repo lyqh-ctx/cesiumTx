@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<div id="toolbar"></div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer');
+    var box = new Cesium.BoxGeometry({
+        vertexFormat : Cesium.VertexFormat.POSITION_ONLY,
+        maximum : new Cesium.Cartesian3(250000.0, 250000.0, 250000.0),
+        minimum : new Cesium.Cartesian3(-250000.0, -250000.0, -250000.0)
+    });
+    var geometry_box = Cesium.BoxGeometry.createGeometry(box);
+    var instance_box = new Cesium.GeometryInstance({
+        geometry :geometry_box,
+        modelMatrix : Cesium.Matrix4.multiplyByTranslation(Cesium.Transforms.eastNorthUpToFixedFrame(
+                Cesium.Cartesian3.fromDegrees(-95.59777,40.03883)), new Cesium.Cartesian3(0.0, 0.0, 125000.0), new Cesium.Matrix4()),
+
+
+    });
+
+    var primitive=viewer.scene.primitives.add(new Cesium.Primitive({
+        geometryInstances : [instance_box],
+        appearance : new Cesium.MaterialAppearance({
+            material : Cesium.Material.fromType('Color'),
+            faceForward : true
+        })
+    }));
+
+</script>
+</body>
+</html>
