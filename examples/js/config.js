@@ -87,6 +87,7 @@ var exampleConfig = {
                     {"name":"旋转2D地图","name_en":"","thumbnail":"scene_rotatable_2d_map.png","fileName":"scene_rotatable_2d_map","page":"scene_rotatable_2d_map.html"},
                     {"name":"阴影","name_en":"","thumbnail":"scene_shadows.png","fileName":"scene_shadows","page":"scene_shadows.html"},
                     {"name":"天空大气","name_en":"","thumbnail":"scene_sky_atmosphere.png","fileName":"scene_sky_atmosphere","page":"scene_sky_atmosphere.html"},
+                    {"name":"场景灯光","name_en":"","thumbnail":"scene_lighting.png","fileName":"scene_lighting","page":"scene_lighting.html"},
 
                 ]
             },
@@ -118,6 +119,7 @@ var exampleConfig = {
                     {"name":"spheres and ellipsoids","name_en":"","thumbnail":"czml_spheres_ellipsoids.png","fileName":"czml_spheres_ellipsoids","page":"czml_spheres_ellipsoids.html"},
                     {"name":"wall","name_en":"","thumbnail":"czml_wall.png","fileName":"czml_wall","page":"czml_wall.html"},
                     {"name":"叠加层级","name_en":"","thumbnail":"czml_zIndex.png","fileName":"czml_zIndex","page":"czml_zIndex.html"},
+                    {"name":"模型数据链接","name_en":"","thumbnail":"czml_model_data_url.png","fileName":"czml_model_data_url","page":"czml_model_data_url.html"},
 
                 ]
             },
