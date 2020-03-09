@@ -2,378 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a783e8dc-bb66-4e42-93f5-d0980bdddd92" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_0.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_1.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_10.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_11.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_12.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_13.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_14.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_15.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_16.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_17.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_18.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_19.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_2.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_20.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_21.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_22.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_23.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_24.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_25.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_26.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_27.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_3.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_5.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_6.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_7.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_8.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/IAU2006_XYS/IAU2006_XYS_9.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Images/bing_maps_credit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Images/cesium_credit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Images/google_earth_credit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Images/ion-credit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/LensFlare/DirtMask.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/LensFlare/StarBurst.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/0/0/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/0/1/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/1/0/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/1/0/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/1/1/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/1/1/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/1/2/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/1/2/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/1/3/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/1/3/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/0/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/0/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/0/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/0/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/1/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/1/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/1/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/1/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/2/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/2/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/2/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/2/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/3/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/3/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/3/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/3/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/4/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/4/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/4/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/4/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/5/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/5/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/5/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/5/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/6/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/6/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/6/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/6/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/7/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/7/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/7/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/2/7/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/NaturalEarthII/tilemapresource.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/SkyBox/tycho2t3_80_mx.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/SkyBox/tycho2t3_80_my.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/SkyBox/tycho2t3_80_mz.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/SkyBox/tycho2t3_80_px.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/SkyBox/tycho2t3_80_py.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/SkyBox/tycho2t3_80_pz.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/airfield.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/airport.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/alcohol-shop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/america-football.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/art-gallery.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/bakery.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/bank.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/bar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/baseball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/basketball.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/beer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/bicycle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/building.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/bus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/cafe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/camera.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/campsite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/car.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/cemetery.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/cesium.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/chemist.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/cinema.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/circle-stroked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/circle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/city.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/clothing-store.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/college.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/commercial.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/cricket.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/cross.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/dam.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/danger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/disability.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/dog-park.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/embassy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/emergency-telephone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/entrance.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/farm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/fast-food.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/ferry.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/fire-station.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/fuel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/garden.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/gift.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/golf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/grocery.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/hairdresser.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/harbor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/heart.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/heliport.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/hospital.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/ice-cream.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/industrial.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/land-use.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/laundry.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/library.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/lighthouse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/lodging.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/logging.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/london-underground.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/marker-stroked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/marker.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/minefield.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/mobilephone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/monument.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/museum.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/music.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/oil-well.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/park.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/park2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/parking-garage.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/parking.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/pharmacy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/pitch.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/place-of-worship.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/playground.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/police.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/polling-place.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/post.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/prison.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/rail-above.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/rail-light.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/rail-metro.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/rail-underground.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/rail.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/religious-christian.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/religious-jewish.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/religious-muslim.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/restaurant.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/roadblock.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/rocket.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/school.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/scooter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/shop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/skiing.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/slaughterhouse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/soccer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/square-stroked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/square.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/star-stroked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/star.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/suitcase.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/swimming.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/telephone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/tennis.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/theatre.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/toilets.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/town-hall.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/town.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/triangle-stroked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/triangle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/village.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/warehouse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/waste-basket.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/water.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/wetland.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/maki/zoo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/moonSmall.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/pin.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/waterNormals.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/Textures/waterNormalsSmall.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Assets/approximateTerrainHeights.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Cesium.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/ThirdParty/Workers/deflate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/ThirdParty/Workers/draco_decoder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/ThirdParty/Workers/draco_wasm_wrapper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/ThirdParty/Workers/inflate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/ThirdParty/draco_decoder.wasm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/ThirdParty/google-earth-dbroot-parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Animation/Animation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Animation/lighter.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/BaseLayerPicker/BaseLayerPicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/BaseLayerPicker/lighter.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Cesium3DTilesInspector/Cesium3DTilesInspector.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/CesiumInspector/CesiumInspector.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/CesiumWidget/CesiumWidget.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/CesiumWidget/lighter.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/FullscreenButton/FullscreenButton.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Geocoder/Geocoder.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Geocoder/lighter.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/bingAerial.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/bingAerialLabels.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/bingRoads.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/blueMarble.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/earthAtNight.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/esriNationalGeographic.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/esriWorldImagery.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/esriWorldStreetMap.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/mapQuestOpenStreetMap.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/mapboxSatellite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/mapboxStreets.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/mapboxTerrain.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/naturalEarthII.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/openStreetMap.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/sentinel-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/stamenToner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/ImageryProviders/stamenWatercolor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/NavigationHelp/Mouse.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/NavigationHelp/MouseLeft.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/NavigationHelp/MouseMiddle.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/NavigationHelp/MouseRight.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/NavigationHelp/Touch.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/NavigationHelp/TouchDrag.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/NavigationHelp/TouchRotate.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/NavigationHelp/TouchTilt.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/NavigationHelp/TouchZoom.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/TerrainProviders/CesiumWorldTerrain.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/TerrainProviders/Ellipsoid.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/TimelineIcons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Images/info-loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/InfoBox/InfoBox.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/InfoBox/InfoBoxDescription.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/NavigationHelpButton/NavigationHelpButton.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/NavigationHelpButton/lighter.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/PerformanceWatchdog/PerformanceWatchdog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/ProjectionPicker/ProjectionPicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/SceneModePicker/SceneModePicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/SelectionIndicator/SelectionIndicator.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Timeline/Timeline.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Timeline/lighter.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/VRButton/VRButton.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/Viewer/Viewer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/lighter.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/lighterShared.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/shared.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Widgets/widgets.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/ArcType-e0f1982f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/AttributeCompression-5601f533.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/BoundingRectangle-b2c8004c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/BoxGeometry-303fc346.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/Cartesian2-ba70b51f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/Check-e5651467.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/Color-e0436000.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/ComponentDatatype-418b1c61.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/CoplanarPolygonGeometryLibrary-6a6d2001.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/CorridorGeometryLibrary-612400dc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/CylinderGeometry-b2227fa7.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/CylinderGeometryLibrary-f35c6b75.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/EllipseGeometry-a6bcf217.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/EllipseGeometryLibrary-d9b0e4d2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/EllipseOutlineGeometry-501d064f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/EllipsoidGeodesic-666ad0d2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/EllipsoidGeometry-d739b425.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/EllipsoidOutlineGeometry-ec4c7190.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/EllipsoidRhumbLine-d5a5f3d0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/EllipsoidTangentPlane-0decb876.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/EllipsoidalOccluder-e6218e4e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/EncodedCartesian3-4813be74.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/FrustumGeometry-1b28344c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/GeometryAttribute-8bc1900e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/GeometryAttributes-f8548d3f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/GeometryInstance-b79eebc1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/GeometryOffsetAttribute-fa4e7a11.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/GeometryPipeline-bb485d83.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/IndexDatatype-2bcfc06b.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/IntersectionTests-35b85442.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/Math-7782f09e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/OrientedBoundingBox-2b5c2949.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/Plane-475170f0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/PolygonGeometryLibrary-35591ed2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/PolygonPipeline-2f06d6d9.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/PolylinePipeline-b75c5343.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/PolylineVolumeGeometryLibrary-83907e8d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/PrimitivePipeline-2295818f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/RectangleGeometryLibrary-8ecf10e3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/RuntimeError-51c34ab4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/TerrainEncoding-114aa591.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/Transforms-5119c07b.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/VertexFormat-e2e35139.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/WallGeometryLibrary-0f3e577d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/WebGLConstants-90dbfe2f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/WebMercatorProjection-1ecca5ba.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/arrayRemoveDuplicates-33a93436.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/cesiumWorkerBootstrapper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/combineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createBoxGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createBoxOutlineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createCircleGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createCircleOutlineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createCoplanarPolygonGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createCoplanarPolygonOutlineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createCorridorGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createCorridorOutlineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createCylinderGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createCylinderOutlineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createEllipseGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createEllipseOutlineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createEllipsoidGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createEllipsoidOutlineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createFrustumGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createFrustumOutlineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createGroundPolylineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createPlaneGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createPlaneOutlineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createPolygonGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createPolygonOutlineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createPolylineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createPolylineVolumeGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createPolylineVolumeOutlineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createRectangleGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createRectangleOutlineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createSimplePolylineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createSphereGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createSphereOutlineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createTaskProcessorWorker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createVectorTileGeometries.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createVectorTilePoints.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createVectorTilePolygons.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createVectorTilePolylines.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createVerticesFromGoogleEarthEnterpriseBuffer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createVerticesFromHeightmap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createVerticesFromQuantizedTerrainMesh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createWallGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/createWallOutlineGeometry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/decodeDraco.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/decodeGoogleEarthEnterprisePacket.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/defaultValue-29c9b1af.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/defineProperties-c817531e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/defined-2a4f2d00.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/freezeObject-a51e076f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/transcodeCRNToDXT.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/transferTypedArrayTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/upsampleQuantizedTerrainMesh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/js/Cesium-1.63/Workers/when-1faa3867.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/js/config.js" afterPath="$PROJECT_DIR$/examples/js/config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/js/ctx.js" afterPath="$PROJECT_DIR$/examples/js/ctx.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/header.html" afterPath="$PROJECT_DIR$/template/header.html" />
     </list>
     <ignored path="cesiumTx.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -394,11 +26,11 @@
     <favorites_list name="cesiumTx" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="czml_model_data_url.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/czml_model_data_url.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4375">
+            <state vertical-scroll-proportion="0.0">
               <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding>
                 <element signature="e#387#3965#0" expanded="false" />
@@ -407,20 +39,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/examples/js/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="121" column="72" selection-start-line="121" selection-start-column="72" selection-end-line="121" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.73239434">
+              <caret line="122" column="37" selection-start-line="122" selection-start-column="37" selection-end-line="122" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scene_lighting.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scene_lighting.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/scene_lighting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22504893">
+            <state vertical-scroll-proportion="-11.535714">
               <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
               <folding />
             </state>
@@ -430,8 +62,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0625">
-              <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
+            <state vertical-scroll-proportion="-6.785714">
+              <caret line="15" column="165" selection-start-line="15" selection-start-column="165" selection-end-line="15" selection-end-column="165" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -441,11 +73,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="czml_3dtiles.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/czml_3dtiles.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.785714">
+              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ctx.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/js/ctx.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -454,7 +96,7 @@
       <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.75">
+            <state vertical-scroll-proportion="0.0">
               <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
               <folding />
             </state>
@@ -481,9 +123,10 @@
       <list>
         <option value="$PROJECT_DIR$/examples/czml_model_data_url.html" />
         <option value="$PROJECT_DIR$/examples/scene_lighting.html" />
-        <option value="$PROJECT_DIR$/examples/js/ctx.js" />
         <option value="$PROJECT_DIR$/template/header.html" />
+        <option value="$PROJECT_DIR$/examples/js/ctx.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/examples/czml_3dtiles.html" />
         <option value="$PROJECT_DIR$/examples/js/config.js" />
       </list>
     </option>
@@ -524,6 +167,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -539,70 +184,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cesiumTx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cesiumTx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cesiumTx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cesiumTx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cesiumTx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="third-party" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cesiumTx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cesiumTx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cesiumTx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cesiumTx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -640,9 +221,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1016,6 +595,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -1038,41 +622,50 @@
       <created>1581926611724</created>
       <option name="number" value="Default" />
       <updated>1581926611724</updated>
-      <workItem from="1581926613089" duration="3171000" />
+      <workItem from="1581926613089" duration="4108000" />
+      <workItem from="1583744619654" duration="734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3171000" />
+    <option name="totallyTimeSpent" value="4842000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.01633987" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7076923" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1088,37 +681,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/examples/js/ctx.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.75">
-          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0625">
-          <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/czml_model_data_url.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4375">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding>
             <element signature="e#387#3965#0" expanded="false" />
@@ -1136,8 +701,98 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/scene_lighting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22504893">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/js/ctx.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/czml_model_data_url.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding>
+            <element signature="e#387#3965#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/scene_lighting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.535714">
           <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/js/ctx.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.785714">
+          <caret line="15" column="165" selection-start-line="15" selection-start-column="165" selection-end-line="15" selection-end-column="165" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/czml_3dtiles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.785714">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73239434">
+          <caret line="122" column="37" selection-start-line="122" selection-start-column="37" selection-end-line="122" selection-end-column="37" />
           <folding />
         </state>
       </provider>

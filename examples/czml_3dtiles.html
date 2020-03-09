@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer',{
+        shouldAnimate : true
+    });
+    var czml = [{
+        "id" : "document",
+        "version" : "1.0"
+    }, {
+        "id" : "BatchedColors",
+        "name" : "BatchedColors",
+        "tileset": {
+            "uri" : "../data/Cesium3DTiles/Batched/BatchedColors/tileset.json"
+        }
+    }];
+
+
+    var dataSourcePromise = viewer.dataSources.add(Cesium.CzmlDataSource.load(czml));
+
+    dataSourcePromise.then(function(dataSource){
+        viewer.flyTo(dataSource.entities.getById('BatchedColors'));
+    }).otherwise(function(error){
+        window.alert(error);
+    });
+
+
+
+
+
+
+</script>
+</body>
+</html>

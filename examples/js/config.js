@@ -120,6 +120,7 @@ var exampleConfig = {
                     {"name":"wall","name_en":"","thumbnail":"czml_wall.png","fileName":"czml_wall","page":"czml_wall.html"},
                     {"name":"叠加层级","name_en":"","thumbnail":"czml_zIndex.png","fileName":"czml_zIndex","page":"czml_zIndex.html"},
                     {"name":"模型数据链接","name_en":"","thumbnail":"czml_model_data_url.png","fileName":"czml_model_data_url","page":"czml_model_data_url.html"},
+                    {"name":"CZML 3DTiles","name_en":"","thumbnail":"czml_3dtiles.png","fileName":"czml_3dtiles","page":"czml_3dtiles.html"},
 
                 ]
             },
