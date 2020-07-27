@@ -19,7 +19,7 @@
         _init_: function () {
         },
         initViewer: function (id, options) {
-            Cesium.Ion.defaultAccessToken ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlYmY1OGY2NS1kODVmLTQxNTUtOWY5YS00ODE1Y2E1ZjFkZTQiLCJpZCI6MjU5LCJzY29wZXMiOlsiYXNyIiwiZ2MiXSwiaWF0IjoxNTcyNjI4NjQ5fQ.CYr8wbSJnOsWz4x2ufDHVe7CGvWzEWl4HzcOcceaNCE";
+            Cesium.Ion.defaultAccessToken ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4NzdlNDVhMy1mNDAxLTQ5MWMtODhkYS00MTc1MTU4NzFmNzciLCJpZCI6MjU5LCJzY29wZXMiOlsiYXNyIiwiZ2MiXSwiaWF0IjoxNTkzNjI4MDI3fQ.sqnKP2DNn0soCyh1t9taAa2xkbZ6EIn0Z7_VwujTCtQ";
             this.iViewer=new Cesium.Viewer(id, this.__setOptions(this.__getCesiumParameter(),options));
             this.__setSceneRender();
             //var info=new CoordinateInfo(this.iViewer);

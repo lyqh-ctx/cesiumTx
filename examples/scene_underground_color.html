@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<div id="toolbar">
+    <table>
+        <tbody>
+        <tr>
+            <td>Enabled</td>
+            <td>
+                <input type="checkbox" data-bind="checked: enabled">
+            </td>
+        </tr>
+        <tr>
+            <td>Near distance</td>
+            <td>
+                <input type="range" min="0.0" max="1000000.0" step="1.0" data-bind="value: nearDistance, valueUpdate: 'input'">
+                <input type="text" size="5" data-bind="value: nearDistance">
+            </td>
+        </tr>
+        <tr>
+            <td>Far distance</td>
+            <td>
+                <input type="range" min="100000.0" max="3000000.0" step="1.0" data-bind="value: farDistance, valueUpdate: 'input'">
+                <input type="text" size="5" data-bind="value: farDistance">
+            </td>
+        </tr>
+        <tr>
+            <td>Near alpha</td>
+            <td>
+                <input type="range" min="0.0" max="1.0" step="0.01" data-bind="value: nearAlpha, valueUpdate: 'input'">
+                <input type="text" size="5" data-bind="value: nearAlpha">
+            </td>
+        </tr>
+        <tr>
+            <td>Far alpha</td>
+            <td>
+                <input type="range" min="0.0" max="1.0" step="0.01" data-bind="value: farAlpha, valueUpdate: 'input'">
+                <input type="text" size="5" data-bind="value: farAlpha">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer');
+
+    var scene = viewer.scene;
+    var globe = scene.globe;
+
+    scene.screenSpaceCameraController.enableCollisionDetection = false;
+
+    var longitude = -3.82518;
+    var latitude = 53.11728;
+    var height = -500.0;
+    var position = Cesium.Cartesian3.fromDegrees(
+        longitude,
+        latitude,
+        height
+    );
+    var url = "../data/models/ParcLeadMine/ParcLeadMine.glb";
+
+    var entity = viewer.entities.add({
+        name: url,
+        position: position,
+        model: {
+            uri: url,
+        },
+    });
+
+    viewer.scene.camera.setView({
+        destination: new Cesium.Cartesian3(
+            3827058.651471591,
+            -256575.7981065622,
+            5078738.238484612
+        ),
+        orientation: new Cesium.HeadingPitchRoll(
+            1.9765540737339418,
+            -0.17352018581162754,
+            0.0030147639151465455
+        ),
+        endTransform: Cesium.Matrix4.IDENTITY,
+    });
+
+    var originalColor = Cesium.Color.BLACK;
+    var originalNearDistance = 1000.0;
+    var originalFarDistance = 1000000.0;
+    var originalNearAlpha = 0.0;
+    var originalFarAlpha = 1.0;
+
+    var color = originalColor;
+
+    var viewModel = {
+        enabled: true,
+        nearDistance: originalNearDistance,
+        farDistance: originalFarDistance,
+        nearAlpha: originalNearAlpha,
+        farAlpha: originalFarAlpha,
+    };
+
+    Cesium.knockout.track(viewModel);
+    var toolbar = document.getElementById("toolbar");
+    Cesium.knockout.applyBindings(viewModel, toolbar);
+    for (var name in viewModel) {
+        if (viewModel.hasOwnProperty(name)) {
+            Cesium.knockout.getObservable(viewModel, name).subscribe(update);
+        }
+    }
+
+    Sandcastle.addToolbarButton("Random color", function () {
+        color = Cesium.Color.fromRandom({
+            alpha: 1.0,
+        });
+        update();
+    });
+
+    Sandcastle.addToolbarButton("Clear", function () {
+        color = originalColor;
+        viewModel.enabled = true;
+        viewModel.nearDistance = originalNearDistance;
+        viewModel.farDistance = originalFarDistance;
+        viewModel.nearAlpha = originalNearAlpha;
+        viewModel.farAlpha = originalFarAlpha;
+        update();
+    });
+
+    function update() {
+        globe.undergroundColor = viewModel.enabled ? color : undefined;
+
+        var nearDistance = Number(viewModel.nearDistance);
+        nearDistance = isNaN(nearDistance)
+            ? originalNearDistance
+            : nearDistance;
+
+        var farDistance = Number(viewModel.farDistance);
+        farDistance = isNaN(farDistance) ? originalFarDistance : farDistance;
+
+        if (nearDistance > farDistance) {
+            nearDistance = farDistance;
+        }
+
+        var nearAlpha = Number(viewModel.nearAlpha);
+        nearAlpha = isNaN(nearAlpha) ? 0.0 : nearAlpha;
+
+        var farAlpha = Number(viewModel.farAlpha);
+        farAlpha = isNaN(farAlpha) ? 1.0 : farAlpha;
+
+        globe.undergroundColorAlphaByDistance.near = nearDistance;
+        globe.undergroundColorAlphaByDistance.far = farDistance;
+        globe.undergroundColorAlphaByDistance.nearValue = nearAlpha;
+        globe.undergroundColorAlphaByDistance.farValue = farAlpha;
+    }
+    update();
+
+</script>
+</body>
+</html>
