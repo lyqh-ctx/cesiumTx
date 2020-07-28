@@ -84,6 +84,12 @@
     display: table-cell;
     vertical-align: middle;
 }
+.nav>li>a{
+    color:white !important;
+}
+.nav>li>a:hover{
+    color:black !important;
+}
 
 .navbar .menu-sub-warp {
     max-height: 0;
