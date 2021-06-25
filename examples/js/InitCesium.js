@@ -19,7 +19,7 @@
         _init_: function () {
         },
         initViewer: function (id, options) {
-            Cesium.Ion.defaultAccessToken ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4NzdlNDVhMy1mNDAxLTQ5MWMtODhkYS00MTc1MTU4NzFmNzciLCJpZCI6MjU5LCJzY29wZXMiOlsiYXNyIiwiZ2MiXSwiaWF0IjoxNTkzNjI4MDI3fQ.sqnKP2DNn0soCyh1t9taAa2xkbZ6EIn0Z7_VwujTCtQ";
+            Cesium.Ion.defaultAccessToken ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIzMTQ1MTJkOC1kODA1LTQ3ZjMtYjFiMS1lNDljNGM3NDEzMTkiLCJpZCI6MjU5LCJpYXQiOjE2MjI1NjA5OTF9.DSp0vQUYQfm1d9ffL0PjA1WgnGTnmNdh3-JEl1Aiouw";
             this.iViewer=new Cesium.Viewer(id, this.__setOptions(this.__getCesiumParameter(),options));
             this.__setSceneRender();
             //var info=new CoordinateInfo(this.iViewer);
@@ -52,9 +52,9 @@
                 creditContainer:document.createElement("div"),
                 terrainExaggeration : 1,
                 terrainProvider: new Cesium.EllipsoidTerrainProvider(),
-                imageryProvider:new Cesium.UrlTemplateImageryProvider({
-                    subdomains: ["1", "2", "3"],
-                    url: "http://mt{s}.google.cn/vt/lyrs=s&hl=zh-CN&x={x}&y={y}&z={z}&s=Gali"
+                imageryProvider:new Cesium.ArcGisMapServerImageryProvider({
+                    name:"img_arcgis",
+                    url:"https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
                 }),
                 contextOptions: {
                     webgl: {

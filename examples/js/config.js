@@ -282,6 +282,8 @@ var exampleConfig = {
                 name: "其他示例",
                 name_en: "otherDemo",
                 content: [
+                    {"name":"高度材质","name_en":"","thumbnail":"other_elevation_band_material.png","fileName":"other_elevation_band_material","page":"other_elevation_band_material.html"},
+                    {"name":"球体半透明","name_en":"","thumbnail":"other_globe_translucency.png","fileName":"other_globe_translucency","page":"other_globe_translucency.html"},
                     {"name":"回调属性","name_en":"","thumbnail":"other_callback_property.png","fileName":"other_callback_property","page":"other_callback_property.html"},
                     {"name":"贴模型","name_en":"","thumbnail":"other_clamp_to_3d_model.png","fileName":"other_clamp_to_3d_model","page":"other_clamp_to_3d_model.html"},
                     {"name":"贴地形","name_en":"","thumbnail":"other_clamp_to_terrain.png","fileName":"other_clamp_to_terrain","page":"other_clamp_to_terrain.html"},

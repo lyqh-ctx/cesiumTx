@@ -12,7 +12,7 @@
 }
 
 .skin-black .main-sidebar {
-    background-color: #333333;
+    background-color: #001f3f;
 }
 
 .skin-black .sidebar-menu > li.treeview:hover > a {
@@ -60,7 +60,7 @@ a.sidebar-toggle {
     height: 36px;
     line-height: 36px;
     text-align: center;
-    background-color: #333333;
+    background-color: #001f3f;
     color: white !important;
     display: block;
 }
@@ -77,7 +77,7 @@ a.sidebar-toggle {
 /*侧边栏滚动设置 end*/
 
 .skin-black .treeview-menu li > a {
-    border-left: 3px solid #222d32;
+    border-left: 3px solid #001f3f;
 }
 
 .skin-black .treeview-menu li > a:hover,
@@ -94,11 +94,11 @@ a.sidebar-toggle {
 
 .skin-black .sidebar-menu > li > .treeview-menu {
     margin: 0;
-    background: #222d32;
+    background: #001f3f;
 }
 
 .sidebar-menu li.active > .treeview-menu {
-    background: #222d32;
+    background: #001f3f;
 }
 
 .sidebar-title-bar .fa-angle-left,
@@ -129,7 +129,7 @@ a.sidebar-toggle {
 
 .skin-black .sidebar-menu > li:hover > a,
 .skin-black .sidebar-menu > li.active > a {
-    color: #222d32;
+    color: #001f3f;
     background: #8d1843;
 }
 
