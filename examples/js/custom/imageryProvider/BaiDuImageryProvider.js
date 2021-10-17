@@ -10,7 +10,7 @@
 //],
 !(function (Cesium) {
     var Cartesian2=Cesium.Cartesian2,
-        defineProperties=Cesium.defineProperties,
+        defineProperties=Object.defineProperties,
         DeveloperError=Cesium.DeveloperError,
         WebMercatorTilingScheme=Cesium.WebMercatorTilingScheme,
         ImageryProvider=Cesium.ImageryProvider;

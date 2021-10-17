@@ -42,6 +42,7 @@ var exampleConfig = {
                     {"name":"世界地形","name_en":"","thumbnail":"terrain_cesium_world_terrain.png","fileName":"terrain_cesium_world_terrain","page":"terrain_cesium_world_terrain.html"},
                     {"name":"地形剖切","name_en":"","thumbnail":"terrain_clipping_planes.png","fileName":"terrain_clipping_planes","page":"terrain_clipping_planes.html"},
                     {"name":"地形夸张","name_en":"","thumbnail":"terrain_exaggeration.png","fileName":"terrain_exaggeration","page":"terrain_exaggeration.html"},
+                    {"name":"程序控制地形","name_en":"","thumbnail":"terrain_procedural.png","fileName":"terrain_procedural","page":"terrain_procedural.html"},
 
                 ]
             },
@@ -73,6 +74,8 @@ var exampleConfig = {
                     {"name":"根据距离显示状态","name_en":"","thumbnail":"scene_distance_display_conditions.png","fileName":"scene_distance_display_conditions","page":"scene_distance_display_conditions.html"},
                     {"name":"地形上绘制","name_en":"","thumbnail":"scene_drawing_on_terrain.png","fileName":"scene_drawing_on_terrain","page":"scene_drawing_on_terrain.html"},
                     {"name":"地面大气","name_en":"","thumbnail":"scene_ground_atmosphere.png","fileName":"scene_ground_atmosphere","page":"scene_ground_atmosphere.html"},
+                    {"name":"云","name_en":"","thumbnail":"scene_cloud.png","fileName":"scene_cloud","page":"scene_cloud.html"},
+                    {"name":"设置云参数","name_en":"","thumbnail":"scene_cloud_parameters.png","fileName":"scene_cloud_parameters","page":"scene_cloud_parameters.html"},
                     {"name":"相机参数","name_en":"","thumbnail":"scene_heading_pitch_roll.png","fileName":"scene_heading_pitch_roll","page":"scene_heading_pitch_roll.html"},
                     {"name":"基于图像的照明","name_en":"","thumbnail":"scene_image_based_lighting.png","fileName":"scene_image_based_lighting","page":"scene_image_based_lighting.html"},
                     {"name":"图层透明度","name_en":"","thumbnail":"scene_imagery_color_to_alpha.png","fileName":"scene_imagery_color_to_alpha","page":"scene_imagery_color_to_alpha.html"},
