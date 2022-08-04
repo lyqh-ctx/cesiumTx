@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer">
+</div>
+<div id="toolbar"></div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer',{  
+        shouldAnimate: true,
+        timeline: true,
+    });
+
+    viewer.clock.currentTime = Cesium.JulianDate.fromIso8601(
+        "2021-11-09T20:27:37.016064475348684937Z"
+    );
+
+    // Models
+    const models = [
+        {
+            text: "Cesium Balloon",
+            onselect: function () {
+                selectModel(
+                    "../data/models/CesiumBalloon/CesiumBalloon.glb",
+                    15
+                );
+            },
+        },
+        {
+            text: "Skinned Character",
+            onselect: function () {
+                selectModel(
+                    "../data/models/CesiumMan/Cesium_Man.glb",
+                    0
+                );
+            },
+        },
+        {
+            text: "Draco Compressed Model",
+            onselect: function () {
+                selectModel(
+                    "../data/models/DracoCompressed/CesiumMilkTruck.gltf",
+                    0
+                );
+            },
+        },
+        {
+            text: "Unlit Box",
+            onselect: function () {
+                selectModel("../data/models/BoxUnlit/BoxUnlit.gltf", 0);
+            },
+        },
+        {
+            text: "Drone",
+            onselect: function () {
+                selectModel(
+                    "../data/models/CesiumDrone/CesiumDrone.glb",
+                    15
+                );
+            },
+        },
+        {
+            text: "Ground Vehicle",
+            onselect: function () {
+                selectModel(
+                    "../data/models/GroundVehicle/GroundVehicle.glb",
+                    0
+                );
+            },
+        },
+        {
+            text: "Instanced Box",
+            onselect: function () {
+                selectModel(
+                    "../data/models/BoxInstanced/BoxInstanced.gltf",
+                    15
+                );
+            },
+        },
+    ];
+
+    const hpr = new Cesium.HeadingPitchRoll(
+        Cesium.Math.toRadians(180),
+        0,
+        0
+    );
+    const fixedFrameTransform = Cesium.Transforms.localFrameToFixedFrameGenerator(
+        "north",
+        "west"
+    );
+
+    function selectModel(url, height) {
+        const position = Cesium.Cartesian3.fromDegrees(
+            -123.0744619,
+            44.0503706,
+            height
+        );
+
+        viewer.scene.primitives.removeAll();
+        const model = viewer.scene.primitives.add(
+            Cesium.ModelExperimental.fromGltf({
+                url: url,
+                modelMatrix: Cesium.Transforms.headingPitchRollToFixedFrame(
+                    position,
+                    hpr,
+                    Cesium.Ellipsoid.WGS84,
+                    fixedFrameTransform
+                ),
+                minimumPixelSize: 128,
+                maximumScale: 20000,
+            })
+        );
+
+        model.readyPromise.then(function (model) {
+            viewer.camera.lookAt(
+                position,
+                new Cesium.HeadingPitchRange(
+                    Cesium.Math.toRadians(45),
+                    Cesium.Math.toRadians(-15),
+                    model.boundingSphere.radius * 5
+                )
+            );
+
+            model.activeAnimations.addAll({
+                loop: Cesium.ModelAnimationLoop.REPEAT,
+            });
+        });
+    }
+
+    Sandcastle.addToolbarMenu(models);
+    Sandcastle.finishedLoading();
+
+
+
+</script>
+</body>
+</html>

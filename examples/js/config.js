@@ -95,6 +95,7 @@ var exampleConfig = {
                     {"name":"地球内部","name_en":"","thumbnail":"scene_globe_interior.png","fileName":"scene_globe_interior","page":"scene_globe_interior.html"},
                     {"name":"地球半透明","name_en":"","thumbnail":"scene_globe_translucency.png","fileName":"scene_globe_translucency","page":"scene_globe_translucency.html"},
                     {"name":"地表颜色","name_en":"","thumbnail":"scene_underground_color.png","fileName":"scene_underground_color","page":"scene_underground_color.html"},
+                    {"name":"大气参数","name_en":"","thumbnail":"scene_atmosphere.png","fileName":"scene_atmosphere","page":"scene_atmosphere.html"},
 
                 ]
             },
@@ -164,6 +165,8 @@ var exampleConfig = {
                     {"name":"pins","name_en":"","thumbnail":"geometry_map_pins.png","fileName":"geometry_map_pins","page":"geometry_map_pins.html"},
                     {"name":"model","name_en":"","thumbnail":"geometry_models.png","fileName":"geometry_models","page":"geometry_models.html"},
                     {"name":"模型颜色","name_en":"","thumbnail":"geometry_models_coloring.png","fileName":"geometry_models_coloring","page":"geometry_models_coloring.html"},
+                    {"name":"模型控制","name_en":"","thumbnail":"geometry_manually_controlled_animation.png","fileName":"geometry_manually_controlled_animation","page":"geometry_manually_controlled_animation.html"},
+                    {"name":"模型实验","name_en":"","thumbnail":"geometry_model_experimental.png","fileName":"geometry_model_experimental","page":"geometry_model_experimental.html"},
                     {"name":"贴模型运动","name_en":"","thumbnail":"geometry_clamp_to_3d_model.png","fileName":"geometry_clamp_to_3d_model","page":"geometry_clamp_to_3d_model.html"},
                     {"name":"时间动态车轮","name_en":"","thumbnail":"geometry_time_dynamic_wheels.png","fileName":"geometry_time_dynamic_wheels","page":"geometry_time_dynamic_wheels.html"},
                     {"name":"部分椭球体","name_en":"","thumbnail":"geometry_partial_ellipsoids.png","fileName":"geometry_partial_ellipsoids","page":"geometry_partial_ellipsoids.html"},
@@ -190,14 +193,18 @@ var exampleConfig = {
                     {"name":"BIM数据","name_en":"","thumbnail":"3dTiles_bim.png","fileName":"3dTiles_bim","page":"3dTiles_bim.html"},
                     {"name":"贴切片","name_en":"","thumbnail":"3dTiles_clamp_to_tile.png","fileName":"3dTiles_clamp_to_tile","page":"3dTiles_clamp_to_tile.html"},
                     {"name":"剖切平面","name_en":"","thumbnail":"3dTiles_clipping_planes.png","fileName":"3dTiles_clipping_planes","page":"3dTiles_clipping_planes.html"},
+                    {"name":"双屏对比","name_en":"","thumbnail":"3dTiles_compare.png","fileName":"3dTiles_compare","page":"3dTiles_compare.html"},
                     {"name":"要素选择","name_en":"","thumbnail":"3dTiles_feature_picking.png","fileName":"3dTiles_feature_picking","page":"3dTiles_feature_picking.html"},
                     {"name":"要素样式","name_en":"","thumbnail":"3dTiles_feature_styling.png","fileName":"3dTiles_feature_styling","page":"3dTiles_feature_styling.html"},
                     {"name":"数据格式","name_en":"","thumbnail":"3dTiles_formats.png","fileName":"3dTiles_formats","page":"3dTiles_formats.html"},
                     {"name":"检查器","name_en":"","thumbnail":"3dTiles_inspector.png","fileName":"3dTiles_inspector","page":"3dTiles_inspector.html"},
-                    {"name":"差值","name_en":"","thumbnail":"3dTiles_interactivity.png","fileName":"3dTiles_interactivity","page":"3dTiles_interactivity.html"},
+                    {"name":"鼠标交互","name_en":"","thumbnail":"3dTiles_interactivity.png","fileName":"3dTiles_interactivity","page":"3dTiles_interactivity.html"},
                     {"name":"室内三维","name_en":"","thumbnail":"3dTiles_interior.png","fileName":"3dTiles_interior","page":"3dTiles_interior.html"},
+                    {"name":"也门CDB","name_en":"","thumbnail":"3dTiles_next_cdb_yemen.png","fileName":"3dTiles_next_cdb_yemen","page":"3dTiles_next_cdb_yemen.html"},
+                    {"name":"S2全球","name_en":"","thumbnail":"3dtiles_next_s2_globe.png","fileName":"3dtiles_next_s2_globe","page":"3dtiles_next_s2_globe.html"},
                     {"name":"倾斜摄影测量测量","name_en":"","thumbnail":"3dTiles_photogrammetry.png","fileName":"3dTiles_photogrammetry","page":"3dTiles_photogrammetry.html"},
                     {"name":"倾斜摄影测量测量分类","name_en":"","thumbnail":"3dTiles_photogrammetry_classification.png","fileName":"3dTiles_photogrammetry_classification","page":"3dTiles_photogrammetry_classification.html"},
+                    {"name":"倾斜摄影测量测量分类2","name_en":"","thumbnail":"3dtiles_next_photogrammetry_classification.png","fileName":"3dtiles_next_photogrammetry_classification","page":"3dtiles_next_photogrammetry_classification.html"},
                     {"name":"点云数据","name_en":"","thumbnail":"3dTiles_point_cloud.png","fileName":"3dTiles_point_cloud","page":"3dTiles_point_cloud.html"},
                     {"name":"点云分类","name_en":"","thumbnail":"3dTiles_point_cloud_classification.png","fileName":"3dTiles_point_cloud_classification","page":"3dTiles_point_cloud_classification.html"},
                     {"name":"点云阴影","name_en":"","thumbnail":"3dTiles_point_cloud_shading.png","fileName":"3dTiles_point_cloud_shading","page":"3dTiles_point_cloud_shading.html"},
@@ -206,6 +213,7 @@ var exampleConfig = {
                     {"name":"根据切片获取高度","name_en":"","thumbnail":"3dTiles_simple_height_from_tile.png","fileName":"3dTiles_simple_height_from_tile","page":"3dTiles_simple_height_from_tile.html"},
                     {"name":"地形分类","name_en":"","thumbnail":"3dTiles_terrain_classification.png","fileName":"3dTiles_terrain_classification","page":"3dTiles_terrain_classification.html"},
                     {"name":"BIM场景线","name_en":"","thumbnail":"3dTiles_with_polyline.png","fileName":"3dTiles_with_polyline","page":"3dTiles_with_polyline.html"},
+                    {"name":"自定义Shader","name_en":"","thumbnail":"3dTiles_custom_shaders.png","fileName":"3dTiles_custom_shaders","page":"3dTiles_custom_shaders.html"},
 
                 ]
             },
@@ -235,7 +243,8 @@ var exampleConfig = {
                     {"name":"自定义单要素处理","name_en":"","thumbnail":"processing_custom_per_feature_post_process.png","fileName":"processing_custom_per_feature_post_process","page":"processing_custom_per_feature_post_process.html"},
                     {"name":"自定义后期处理","name_en":"","thumbnail":"processing_custom_post_process.png","fileName":"processing_custom_post_process","page":"processing_custom_post_process.html"},
                     {"name":"视野深度","name_en":"","thumbnail":"processing_depth_of_field.png","fileName":"processing_depth_of_field","page":"processing_depth_of_field.html"},
-                    {"name":"快速近似抗锯齿","name_en":"","thumbnail":"processing_fxaa.png","fileName":"processing_fxaa","page":"processing_fxaa.html"},
+                    {"name":"快速近似抗锯齿FXAA","name_en":"","thumbnail":"processing_fxaa.png","fileName":"processing_fxaa","page":"processing_fxaa.html"},
+                    {"name":"抗锯齿MSAA","name_en":"","thumbnail":"processing_msaa.png","fileName":"processing_msaa","page":"processing_msaa.html"},
                     {"name":"高曝光动态范围","name_en":"","thumbnail":"processing_high_dynamic_range.png","fileName":"processing_high_dynamic_range","page":"processing_high_dynamic_range.html"},
                     {"name":"透镜光照","name_en":"","thumbnail":"processing_lensFlare.png","fileName":"processing_lensFlare","page":"processing_lensFlare.html"},
                     {"name":"单要素后期处理","name_en":"","thumbnail":"processing_per_feature_post_processing.png","fileName":"processing_per_feature_post_processing","page":"processing_per_feature_post_processing.html"},
@@ -263,6 +272,8 @@ var exampleConfig = {
                     {"name":"材质","name_en":"","thumbnail":"materials.png","fileName":"materials"},
                     {"name":"全球材质","name_en":"","thumbnail":"materials_globe.png","fileName":"materials_globe"},
                     {"name":"基于物理的材质","name_en":"","thumbnail":"materials_physically_based.png","fileName":"materials_physically_based"},
+                    {"name":"模型Shader材质","name_en":"","thumbnail":"materials_custom_shaders_models.png","fileName":"materials_custom_shaders_models"},
+                    {"name":"纹理Shader","name_en":"","thumbnail":"materials_custom_shaders_property_textures.png","fileName":"materials_custom_shaders_property_textures"},
 
                 ]
             },

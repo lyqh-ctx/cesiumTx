@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./js/ctx.js"></script>
+</head>
+<body>
+<div id="cesiumContainer"></div>
+<div id="toolbar"></div>
+<script>
+    var initCesium = new InitCesium();
+    var viewer = initCesium.initViewer('cesiumContainer',{
+        shouldAnimate : true,
+        terrainProvider: Cesium.createWorldTerrain(),
+    });
+    const pinBuilder = new Cesium.PinBuilder();
+
+    Sandcastle.addToolbarMenu(
+        [
+            {
+                text: "Track with Waypoints",
+                onselect: function () {
+                    viewer.dataSources
+                        .add(
+                            Cesium.GpxDataSource.load(
+                                "../data//gpx/lamina.gpx",
+                                {
+                                    clampToGround: true,
+                                }
+                            )
+                        )
+                        .then(function (dataSource) {
+                            viewer.flyTo(dataSource.entities);
+                        });
+                },
+            },
+            {
+                text: "Route",
+                onselect: function () {
+                    viewer.dataSources
+                        .add(
+                            Cesium.GpxDataSource.load(
+                                "../data//gpx/route.gpx",
+                                {
+                                    clampToGround: true,
+                                }
+                            )
+                        )
+                        .then(function (dataSource) {
+                            viewer.flyTo(dataSource.entities);
+                        });
+                },
+            },
+            {
+                text: "Waypoints",
+                onselect: function () {
+                    viewer.dataSources
+                        .add(
+                            Cesium.GpxDataSource.load("../data//gpx/wpt.gpx", {
+                                clampToGround: true,
+                            })
+                        )
+                        .then(function (dataSource) {
+                            viewer.flyTo(dataSource.entities);
+                        });
+                },
+            },
+            {
+                text: "Multiple Tracks with Waypoints",
+                onselect: function () {
+                    viewer.dataSources
+                        .add(
+                            Cesium.GpxDataSource.load(
+                                "../data//gpx/complexTrk.gpx",
+                                { clampToGround: true }
+                            )
+                        )
+                        .then(function (dataSource) {
+                            viewer.flyTo(dataSource.entities);
+                        });
+                },
+            },
+            {
+                text: "Symbology Options",
+                onselect: function () {
+                    viewer.dataSources
+                        .add(
+                            Cesium.GpxDataSource.load(
+                                "../data//gpx/lamina.gpx",
+                                {
+                                    clampToGround: true,
+                                    trackColor: Cesium.Color.YELLOW,
+                                    waypointImage: pinBuilder.fromMakiIconId(
+                                        "bicycle",
+                                        Cesium.Color.BLUE,
+                                        48
+                                    ),
+                                }
+                            )
+                        )
+                        .then(function (dataSource) {
+                            viewer.flyTo(dataSource.entities);
+                        });
+                },
+            },
+        ],
+        "toolbar"
+    );
+
+    Sandcastle.reset = function () {
+        viewer.dataSources.removeAll();
+        viewer.clock.clockRange = Cesium.ClockRange.UNBOUNDED;
+        viewer.clock.clockStep = Cesium.ClockStep.SYSTEM_CLOCK;
+    };
+    Sandcastle.finishedLoading();
+
+
+
+
+</script>
+</body>
+</html>
