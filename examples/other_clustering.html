@@ -134,7 +134,7 @@
         Sandcastle.addToggleButton('Custom Styling', true, function(checked) {
             customStyle();
         });
-
+        Sandcastle.finishedLoading();
         var handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
         handler.setInputAction(function(movement) {
             var pickedLabel = viewer.scene.pick(movement.position);
