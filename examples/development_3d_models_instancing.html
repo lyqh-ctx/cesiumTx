@@ -51,7 +51,7 @@
                 loop : Cesium.ModelAnimationLoop.REPEAT
             });
             orientCamera(collection._boundingSphere.center, collection._boundingSphere.radius);
-        }).otherwise(function(error){
+        }).catch(function(error){
             window.alert(error);
         });
     }
@@ -79,7 +79,7 @@
                     multiplier : 0.5,
                     loop : Cesium.ModelAnimationLoop.REPEAT
                 });
-            }).otherwise(function(error){
+            }).catch(function(error){
                 window.alert(error);
             });
         }

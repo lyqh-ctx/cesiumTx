@@ -32,7 +32,7 @@
     Cesium.when(primitive.readyPromise).then(function(primitive) {
 
         viewer.camera.viewBoundingSphere(primitive._boundingSpheres[0])
-    }).otherwise(function(error){
+    }).catch(function(error){
         window.alert(error);
     });
 

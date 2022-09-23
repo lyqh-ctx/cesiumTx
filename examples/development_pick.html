@@ -272,7 +272,7 @@
                 var pitch = Cesium.Math.toRadians(-20.0);
                 camera.lookAt(collection._boundingSphere.center, new Cesium.HeadingPitchRange(heading, pitch, range));
                 camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
-            }).otherwise(function(error){
+            }).catch(function(error){
                 window.alert(error);
             });
 
@@ -315,7 +315,7 @@
                     Cesium.Color.clone(pickedFeature.color, highlighted.originalColor);
                     pickedFeature.color = Cesium.Color.YELLOW;
                 }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
-            }).otherwise(function(error) {
+            }).catch(function(error) {
                 throw(error);
             });
         }
@@ -343,7 +343,7 @@
                     Cesium.Color.clone(pickedFeature.color, highlighted.originalColor);
                     pickedFeature.color = Cesium.Color.YELLOW;
                 }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
-            }).otherwise(function(error) {
+            }).catch(function(error) {
                 throw(error);
             });
         }
@@ -379,7 +379,7 @@
                         color : 'color("yellow")'
                     });
                 }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
-            }).otherwise(function(error) {
+            }).catch(function(error) {
                 throw(error);
             });
         }
@@ -412,7 +412,7 @@
                     Cesium.Color.clone(pickedFeature.color, highlighted.originalColor);
                     pickedFeature.color = Cesium.Color.YELLOW;
                 }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
-            }).otherwise(function(error) {
+            }).catch(function(error) {
                 throw(error);
             });
         }
@@ -445,7 +445,7 @@
                     Cesium.Color.clone(pickedFeature.color, highlighted.originalColor);
                     pickedFeature.color = Cesium.Color.YELLOW;
                 }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
-            }).otherwise(function(error) {
+            }).catch(function(error) {
                 throw(error);
             });
         }

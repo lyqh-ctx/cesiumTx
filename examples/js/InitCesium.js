@@ -30,6 +30,14 @@
             options.enableZoomControls= false;
             options.enableDistanceLegend= false;
             options.enableCompassOuterRing= false;
+            this.iViewer.cesiumWidget.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
+            // 倾斜视图 鼠标左键旋转
+            this.iViewer.scene.screenSpaceCameraController.tiltEventTypes = [Cesium.CameraEventType.RIGHT_DRAG];
+            // 缩放设置 重新设置缩放成员
+            this.iViewer.scene.screenSpaceCameraController.zoomEventTypes = [Cesium.CameraEventType.MIDDLE_DRAG, Cesium.CameraEventType.WHEEL, Cesium.CameraEventType.PINCH];
+            // 平移 添加鼠标右键  鼠标右键平移
+            this.iViewer.scene.screenSpaceCameraController.rotateEventTypes = [Cesium.CameraEventType.LEFT_DRAG];
+
             //this.iViewer.extend(Cesium.viewerCesiumNavigationMixin, options);
             return this.iViewer;
         },

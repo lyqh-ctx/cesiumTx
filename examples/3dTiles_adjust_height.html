@@ -49,7 +49,7 @@
     tileset.readyPromise.then(function(tileset) {
         viewer.scene.primitives.add(tileset);
         viewer.zoomTo(tileset, new Cesium.HeadingPitchRange(0.0, -0.5, tileset.boundingSphere.radius * 2.0));
-    }).otherwise(function(error) {
+    }).catch(function(error) {
         console.log(error);
     });
 

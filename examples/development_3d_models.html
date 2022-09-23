@@ -134,7 +134,7 @@
             var heading = Cesium.Math.toRadians(230.0);
             var pitch = Cesium.Math.toRadians(-20.0);
             camera.lookAt(center, new Cesium.HeadingPitchRange(heading, pitch, r * 2.0));
-        }).otherwise(function(error){
+        }).catch(function(error){
             window.alert(error);
         });
     }

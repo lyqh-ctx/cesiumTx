@@ -72,7 +72,7 @@
     dataSourcePromise.then(function(dataSource){
         console.log(1)
         viewer.trackedEntity = dataSource.entities.getById('test model');
-    }).otherwise(function(error){
+    }).catch(function(error){
         console.error(error);
     });
 
