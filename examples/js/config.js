@@ -81,7 +81,7 @@ var exampleConfig = {
                     {"name":"图层透明度","name_en":"","thumbnail":"scene_imagery_color_to_alpha.png","fileName":"scene_imagery_color_to_alpha","page":"scene_imagery_color_to_alpha.html"},
                     {"name":"检查器","name_en":"","thumbnail":"scene_inspector.png","fileName":"scene_inspector","page":"scene_inspector.html"},
                     {"name":"固定坐标","name_en":"","thumbnail":"scene_localToFixedFrame.png","fileName":"scene_localToFixedFrame","page":"scene_localToFixedFrame.html"},
-                    {"name":"视图同步","name_en":"","thumbnail":"scene_multiple_synced_views.png","fileName":"scene_multiple_synced_views","page":"scene_multiple_synced_views.html"},
+                    {"name":"多视图同步","name_en":"","thumbnail":"scene_multiple_synced_views.png","fileName":"scene_multiple_synced_views","page":"scene_multiple_synced_views.html"},
                     {"name":"离线部署","name_en":"","thumbnail":"scene_offline.png","fileName":"scene_offline","page":"scene_offline.html"},
                     {"name":"场景选择","name_en":"","thumbnail":"scene_picking.png","fileName":"scene_picking","page":"scene_picking.html"},
                     {"name":"投影","name_en":"","thumbnail":"scene_projection.png","fileName":"scene_projection","page":"scene_projection.html"},
@@ -146,6 +146,7 @@ var exampleConfig = {
                     {"name":"动态Kml数据源","name_en":"","thumbnail":"dataSource_kml_tours.png","fileName":"dataSource_kml_tours","page":"dataSource_kml_tours.html"},
                     {"name":"多种数据源","name_en":"","thumbnail":"dataSource_multi_part.png","fileName":"dataSource_multi_part","page":"dataSource_multi_part.html"},
                     {"name":"组合数据源","name_en":"","thumbnail":"dataSource_ordering.png","fileName":"dataSource_ordering","page":"dataSource_ordering.html"},
+                    {"name":"GPX数据源","name_en":"","thumbnail":"dataSource_gpx.png","fileName":"dataSource_gpx","page":"dataSource_gpx.html"},
 
                 ]
             },
@@ -214,6 +215,9 @@ var exampleConfig = {
                     {"name":"地形分类","name_en":"","thumbnail":"3dTiles_terrain_classification.png","fileName":"3dTiles_terrain_classification","page":"3dTiles_terrain_classification.html"},
                     {"name":"BIM场景线","name_en":"","thumbnail":"3dTiles_with_polyline.png","fileName":"3dTiles_with_polyline","page":"3dTiles_with_polyline.html"},
                     {"name":"自定义Shader","name_en":"","thumbnail":"3dTiles_custom_shaders.png","fileName":"3dTiles_custom_shaders","page":"3dTiles_custom_shaders.html"},
+                    {"name":"I3S对象图层","name_en":"","thumbnail":"3dtiles_i3s_3d_object_layer.png","fileName":"3dtiles_i3s_3d_object_layer","page":"3dtiles_i3s_3d_object_layer.html"},
+                    {"name":"I3S要素选择","name_en":"","thumbnail":"3dtiles_i3s_feature_picking.png","fileName":"3dtiles_i3s_feature_picking","page":"3dtiles_i3s_feature_picking.html"},
+                    {"name":"I3S集成网格","name_en":"","thumbnail":"3dtiles_i3s_integratedmesh_layer.png","fileName":"3dtiles_i3s_integratedmesh_layer","page":"3dtiles_i3s_integratedmesh_layer.html"},
 
                 ]
             },

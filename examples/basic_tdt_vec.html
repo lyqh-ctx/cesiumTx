@@ -14,20 +14,22 @@
     });
     var tdt_key="c1d6b49adb2ba817109873dbc13becb4";
     var img_tdt=new Cesium.WebMapTileServiceImageryProvider({
-        url: "http://t0.tianditu.com/vec_w/wmts?tk="+tdt_key,
+        url: "http://{s}.tianditu.com/vec_w/wmts?tk="+tdt_key,
         layer:'vec',
         style:'default',
         tileMatrixSetID:'w',
         format:'tiles',
-        maximumLevel: 18
+        maximumLevel: 18,
+        subdomains: ["t0", "t1", "t2", "t3", "t4", "t5", "t6", "t7"]
     });
     var img_cia= new Cesium.WebMapTileServiceImageryProvider({
-        url: 'http://t0.tianditu.gov.cn/cva_w/wmts?tk='+tdt_key,
+        url: 'http://{s}.tianditu.gov.cn/cva_w/wmts?tk='+tdt_key,
         layer:'cva',
         style:'default',
         tileMatrixSetID:'w',
         format:'tiles',
-        maximumLevel: 18
+        maximumLevel: 18,
+        subdomains: ["t0", "t1", "t2", "t3", "t4", "t5", "t6", "t7"]
     });
     var layers= viewer.scene.imageryLayers;
     layers.addImageryProvider(img_tdt);
