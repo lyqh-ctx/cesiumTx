@@ -242,7 +242,7 @@ var exampleConfig = {
                     {"name":"华盛顿特区 2017","name_en":"","thumbnail":"ion_washington_DC.png","fileName":"ion_washington_DC","page":"ion_washington_DC.html"},
                     {"name":"Cesium世界地形","name_en":"","thumbnail":"ion_world_terrain.png","fileName":"ion_world_terrain","page":"ion_world_terrain.html"},
                     {"name":"CesiumOSM建筑","name_en":"","thumbnail":"ion_cesium_osm_buildings.png","fileName":"ion_cesium_osm_buildings","page":"ion_cesium_osm_buildings.html"},
-
+                    {"name":"旧金山aerometrex","name_en":"","thumbnail":"ion_aerometrex_san_francisco.png","fileName":"ion_aerometrex_san_francisco","page":"ion_aerometrex_san_francisco.html"},
                 ]
             },
             "postDemo": {
