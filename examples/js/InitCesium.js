@@ -46,7 +46,7 @@
                 animation: false,
                 baseLayerPicker: false,
                 vrButton: false,
-                fullscreenButton: false,
+                fullscreenButton: true,
                 geocoder: false,
                 homeButton: false,
                 infoBox: true,
@@ -60,10 +60,11 @@
                 creditContainer:document.createElement("div"),
                 terrainExaggeration : 1,
                 terrainProvider: new Cesium.EllipsoidTerrainProvider(),
-                imageryProvider:new Cesium.ArcGisMapServerImageryProvider({
-                    name:"img_arcgis",
-                    url:"https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
-                }),
+                baseLayer:Cesium.ImageryLayer.fromProviderAsync(
+                    Cesium.ArcGisMapServerImageryProvider.fromUrl(
+                        'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'
+                    )
+                ),
                 contextOptions: {
                     webgl: {
                         alpha: true,

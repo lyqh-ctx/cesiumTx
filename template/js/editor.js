@@ -190,6 +190,10 @@ function bindEvents() {
         expand = !expand;
     });
 
+    $("#showPageBtn").click(function () {
+       let href= window.location.href.replace("editor.html#","")+".html";
+       window.open(href,"_blank")
+    });
     window.addEventListener("hashchange", function () {
         var hash = window.location.hash;
         if (hash.indexOf("#") !== -1) {

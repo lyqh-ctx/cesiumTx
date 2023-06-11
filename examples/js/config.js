@@ -225,6 +225,8 @@ var exampleConfig = {
                     {"name":"I3S对象图层","name_en":"","thumbnail":"3dtiles_i3s_3d_object_layer.png","fileName":"3dtiles_i3s_3d_object_layer","page":"3dtiles_i3s_3d_object_layer.html"},
                     {"name":"I3S要素选择","name_en":"","thumbnail":"3dtiles_i3s_feature_picking.png","fileName":"3dtiles_i3s_feature_picking","page":"3dtiles_i3s_feature_picking.html"},
                     {"name":"I3S集成网格","name_en":"","thumbnail":"3dtiles_i3s_integratedmesh_layer.png","fileName":"3dtiles_i3s_integratedmesh_layer","page":"3dtiles_i3s_integratedmesh_layer.html"},
+                    {"name":"谷歌倾斜摄影数据","name_en":"","thumbnail":"3dtiles_google_photorealistic_3dtiles.png","fileName":"3dtiles_google_photorealistic_3dtiles","page":"3dtiles_google_photorealistic_3dtiles.html"},
+                    {"name":"谷歌倾斜摄影数据建筑集成","name_en":"","thumbnail":"3dtiles_google_photorealistic_3dtiles_with_building_insert.png","fileName":"3dtiles_google_photorealistic_3dtiles_with_building_insert","page":"3dtiles_google_photorealistic_3dtiles_with_building_insert.html"},
 
                 ]
             },
